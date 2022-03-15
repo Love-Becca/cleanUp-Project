@@ -15,7 +15,9 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel:'stylesheet', href: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" },
+      { rel:'stylesheet', href:"https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500&family=Poppins:wght@200&display=swap" },
     ]
   },
 
@@ -32,7 +34,17 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/fontawesome',
   ],
+
+  fontawesome: {
+    component: 'fa',
+    suffix: true,
+    icons: {
+      solid: true,
+      brands: true,
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
