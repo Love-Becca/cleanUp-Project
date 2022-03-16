@@ -1,5 +1,3 @@
 <template>
 <LandingpageEco/>
-</template>gi
-
-
+</template>
