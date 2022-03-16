@@ -1,9 +1,5 @@
 <template>
-</template>
+<LandingpageEco/>
+</template>gi
 
-<script>
-export default {
-  components: { Signup },
-  name: 'IndexPage'
-}
-</script>
+
