@@ -1,4 +1,9 @@
-<template>
+<template><div>
+<LandingpageEco/>
+
+
+<LandingpageProcess/>
+</div>
 </template>
 
 <script>
