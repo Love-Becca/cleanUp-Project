@@ -1,11 +1,13 @@
-<template><div>
+<template>
+<div>
+<LandingpageHero/>
+<LandingpageWastevid/>
+<LandingpageFeatures/>
+<LandingpageLeaderboard/>
 <LandingpageEco/>
-
-
 <LandingpageProcess/>
 </div>
 </template>
-
 <script>
 //import { testing } from '../components/testing.vue'
 //export default {
