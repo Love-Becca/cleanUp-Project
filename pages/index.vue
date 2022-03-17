@@ -1,5 +1,7 @@
-<template>
+<template><div>
 <LandingpageEco/>
-</template>gi
+<LandingpageProcess/>
+</div>
+</template>
 
 
