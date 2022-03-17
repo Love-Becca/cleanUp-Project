@@ -5,7 +5,7 @@
     </div>
     <div class="comp">
         <bottlecomp />
-        <img src="../assets/whatsapp.jpg" height="55px" width="55px" alt="whatsapp icon" :style="{position:'relative', bottom:'20px', left:'270px'}">
+        <a href="#"><img src="../assets/whatsapp.jpg" height="55px" width="55px" alt="whatsapp icon" :style="{position:'relative', bottom:'20px', left:'270px'}"></a>
     </div>
 </div>
 </template>

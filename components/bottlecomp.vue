@@ -22,4 +22,15 @@ img{
     border-radius: 0 25px 25px 0;
     box-shadow:1px 1px 3px 3px rgb(224, 222, 222, 0.5);
 }
+@media screen and (max-width:768px) {
+    img{
+        width: 40vw;
+    }
+}
+@media screen and (max-width:600px) {
+    img{
+        width:50vw
+    }
+}
+
 </style>

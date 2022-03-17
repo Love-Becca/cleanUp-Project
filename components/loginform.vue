@@ -7,9 +7,7 @@
             <div id="sign-in">
                 <h2>Login!</h2>
             </div>
-            <div id="google-login">
-                <button><img src="../assets/googleicon.jpg" alt="google icon">Login With Google</button>
-            </div>
+            <button><img src="../assets/googleicon.jpg" alt="google icon">Login With Google</button>
             <div id="line-break">
                 <div id="line-break1"></div>
                 <p id="line">or</p>
@@ -83,15 +81,10 @@ span{
 }
 
 button{
-    border: none;
-    font-weight: 500;
-    font-size: 0.8rem;
-    text-align: center;
-    height: 1.8rem;
-    width: 95%;
     background-color: white;
-    margin-left: 10px;
-    box-shadow: 2px 1px 7px 1px rgba(207, 207, 207, 0.993);
+    height: 2rem;
+    width: 95%;
+    border-radius:5px;
 }
 
 img{
@@ -161,7 +154,7 @@ input[type=submit]{
     box-shadow: 1px 1px 1px rgb(167, 165, 165);
 }
 
-#login-btn:before {
+/*#login-btn:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -171,7 +164,7 @@ input[type=submit]{
     z-index: -1;
     filter: blur(5px);
     width: calc(25vw);
-    margin-left: 310px;
+    margin-left: 330px;
     margin-top: 7.5vh;
     height: calc(90vh);
     animation: glowing 20s linear infinite;
@@ -207,5 +200,66 @@ input[type=submit]{
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+@media screen and (max-width:768px) {
+    #user-login{
+        width: 40vw;
+        justify-content: center;
+    }
+    #login-btn:before {
+        width: 40vw;
+        margin-left: 115px;
+    }
+    
+}*/
+
+@media screen and (max-width:600px) {
+    #user-login{
+        width: 50vw;
+        justify-content: center;
+    }
+    /*#login-btn:before {
+        width: 50vw;
+        margin-left: 40px;
+    }*/
+}
+
+@media screen and (max-width:425px) {
+     #user-login{
+        width: 50vw;
+        justify-content: center;
+    }
+    /*#login-btn:before {
+        width: 50vw;
+        margin-left: 40px;
+    }*/
+    #line-break1{
+        width: 4rem;
+    }   
+    #line-break2{
+        width:4rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+     #user-login{
+        width: 50vw;
+        justify-content: center;
+    }
+    /*#login-btn:before {
+        width: 50vw;
+        margin-left: 40px;
+    }*/
+
+    #line-break1{
+        width: 2rem;
+    }   
+    #line-break2{
+        width:2rem;
+    }
+    button{
+        font-size: 0.6rem;
+    }
 }
 </style>

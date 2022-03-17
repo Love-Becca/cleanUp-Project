@@ -37,6 +37,7 @@
                     <input type="text" name="phonenumber" placeholder="+234"><font-awesome-icon icon="inbox" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
                 </form>
             </div>
+            <button><img src="../assets/googleicon.jpg" alt="google icon">Login With Google</button>
             <div id="easy-login">
                 <p>Already have an account?<span id="login">Login</span></p>
             </div>
@@ -131,7 +132,20 @@ label{
     font-weight: 300;
 }
 
-#submit-btn:before {
+button{
+    background-color: white;
+    height: 2rem;
+    width: 95%;
+    border-radius:5px;
+}
+
+img{
+    position: relative;
+    top: 5px;
+    right: 10px;
+    border-radius: 50%;
+}
+/*#submit-btn:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -141,7 +155,7 @@ label{
     z-index: -1;
     filter: blur(5px);
     width: calc(28vw);
-    margin-left: 320px;
+    margin-left: 340px;
     margin-top: 7.5vh;
     height: calc(90vh);
     animation: glowing 20s linear infinite;
@@ -177,5 +191,50 @@ label{
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}*/
+
+@media screen and (max-width:768px) {
+    #user-info{
+        width: 40vw;
+        justify-content: center;
+    }
+    /*#submit-btn:before {
+        width: 40vw;
+        margin-left: 115px;
+    }*/
+
+}
+
+@media screen and (max-width:600px) {
+    #user-info{
+        width: 50vw;
+        justify-content: center;
+    }
+    /*#submit-btn:before {
+        width: 50vw;
+        margin-left: 40px;
+    }*/
+}
+
+@media screen and (max-width:425px) {
+     #user-info{
+        width: 50vw;
+        justify-content: center;
+    }
+    /*#submit-btn:before {
+        width: 50vw;
+        margin-left: 40px;
+    }*/
+}
+
+@media screen and (max-width:375px) {
+     #user-info{
+        width: 50vw;
+        justify-content: center;
+    }
+    #submit-btn:before {
+        width: 50vw;
+        margin-left: 40px;
+    }
 }
 </style>
