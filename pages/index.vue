@@ -1,4 +1,11 @@
 <template>
+<div>
+<LandingpageHero/>
+<LandingpageWastevid/>
+<LandingpageFeatures/>
+<LandingpageLeaderboard/>
+</div>
+
 </template>
 
 <script>
