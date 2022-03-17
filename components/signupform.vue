@@ -10,32 +10,32 @@
             <div id="info1">
                 <form>
                  <label for="username">Username</label><br>
-                    <input type="text" name="username" placeholder="Username">
-                    <fa icon ="envelope" />
+                 <font-awesome-icon icon="user"/>
+                <input type="text" name="username" placeholder="Username">
                 </form>
             </div>
             <div id="info2">
                 <form>
                     <label for="email">Email Address </label><br>
-                    <input type="text" name="email" placeholder="Email Address">
+                    <input type="text" name="email" placeholder="Email Address"><font-awesome-icon icon="envelope"/>
                 </form>
             </div>
             <div id="info3">
                 <form>
                     <label for="password">Password</label><br>
-                    <input type="text" name="password" placeholder="Password">
+                    <input type="text" name="password" placeholder="Password"><font-awesome-icon icon="eye-slash"/>
                 </form>
             </div>
             <div id="info4">
                 <form>
                     <label for="cfpassword">Confirm Password</label><br>
-                    <input type="text" name="cfpassword" placeholder="Confirm Password">
+                    <input type="text" name="cfpassword" placeholder="Confirm Password"><font-awesome-icon icon="eye-slash"/>
                 </form>
             </div>
             <div id="info5">
                 <form>
                     <label for="phonenumber">Phone Number</label><br>
-                    <input type="text" name="phonenumber" placeholder="+234">
+                    <input type="text" name="phonenumber" placeholder="+234"><font-awesome-icon icon="inbox"/>
                 </form>
             </div>
             <div id="easy-login">
@@ -60,20 +60,20 @@
 #sign-up{
     display: grid;
     grid-template-rows: auto auto ;
-    width:50%;
+    width:100%;
     height: 97vh;
-    margin: 0 auto;
-    background-image: url('../assets/bottle.jpg');
-    background-size: cover;
+    /*background-image: url('../assets/bottle.jpg');
+    background-size: cover;*/
 }
 
 #cleanup{
-    color:white;
+    color:rgb(146, 146, 146);
     font-size: 0.5rem;
     border: none;
     height: 6vh;
-    justify-self: center;
-    width: 70%;
+   /*justify-self: center;*/
+    width: 50%;
+    margin-left:30px;
 }
 span{
     color: black;
@@ -82,12 +82,13 @@ span{
 #user-info{
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto auto;
-    justify-self:center;
-    width: 60%;
+    /*justify-self:center;*/
+    width: 65%;
     height: 85vh;
     border: none;
     border-radius: 20px;
-    padding: 10px 55px;
+    padding: 10px 50px;
+    margin-left: 60px;
     box-shadow: 1px 1px 3px 3px rgb(224, 222, 222, 0.5);
 }
 #signup-info{
@@ -99,7 +100,7 @@ input[type=text]{
     height: 2rem;
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: 0 7px 7px 7px ;
     padding: 2px 10px;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -111,7 +112,7 @@ input[type=text]{
     padding-top: 10px;
 }
 p{
-    color: white;
+    color: rgb(150, 146, 146);
     font-size:0.8rem;
     text-align: center;
 }

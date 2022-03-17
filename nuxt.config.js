@@ -38,8 +38,6 @@ export default {
   ],
 
   fontawesome: {
-    component: 'fa',
-    suffix: true,
     icons: {
       solid: true,
       brands: true,
