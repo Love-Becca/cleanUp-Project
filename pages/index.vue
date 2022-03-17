@@ -7,4 +7,4 @@
 //  components: { testing },
 //  name: 'IndexPage'
 //}
-//</script>
+</script>
