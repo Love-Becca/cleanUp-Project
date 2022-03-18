@@ -7,7 +7,7 @@
             <div id="sign-in">
                 <h2>Login!</h2>
             </div>
-            <button><img src="../assets/googleicon.jpg" alt="google icon">Login With Google</button>
+            <button><img src="../assets/googleicon.jpg" alt="google icon"><a href="#">Login With Google</a></button>
             <div id="line-break">
                 <div id="line-break1"></div>
                 <p id="line">or</p>
@@ -22,15 +22,15 @@
             <div id="password-in">
                 <form>
                     <label for="password">Password</label><br>
-                    <input type="text" name="password" placeholder="Password"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'45px', left:'16rem'}"/>
+                    <input type="password" name="password" placeholder="Password"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'45px', left:'16rem'}"/>
                 </form>
             </div>
             <div id="forget-pass">
-                <p id="fg-pass">Forget Password?</p>
+                <a href="#"><p id="fg-pass">Forget Password?</p></a>
             </div>
             <div id="login-btn">
                 <form>
-                    <input type="submit" value="Login">
+                    <a href="#"><input type="submit" value="Login"></a>
                 </form>
             </div>
         </div>
@@ -125,7 +125,7 @@ img{
     border-bottom: rgb(138, 137, 137) 1.5px solid;
 }
 
-input[type=text]{
+input[type=text],[type=password]{
     width: 100%;
     height: 2rem;
     border: none;
@@ -154,52 +154,18 @@ input[type=submit]{
     box-shadow: 1px 1px 1px rgb(167, 165, 165);
 }
 
-/*#login-btn:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(25vw);
-    margin-left: 330px;
-    margin-top: 7.5vh;
-    height: calc(90vh);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+button{
+    background-color: white;
+    height: 2rem;
+    width: 95%;
+    border-radius:5px;
+    border: none;
+    box-shadow: 1px 1px 1px rgb(167, 165, 165);
 }
 
-#login-btn:active {
+a{
+    text-decoration: none;
     color: rgba(101, 192, 9, 1);
-}
-
-#login-btn:active:after {
-    background: transparent;
-}
-
-#login-btn:hover:before {
-    opacity: 1;
-}
-
-#login-btn:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 90vh;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
 }
 
 @media screen and (max-width:768px) {
@@ -207,22 +173,14 @@ input[type=submit]{
         width: 40vw;
         justify-content: center;
     }
-    #login-btn:before {
-        width: 40vw;
-        margin-left: 115px;
-    }
     
-}*/
+}
 
 @media screen and (max-width:600px) {
     #user-login{
         width: 50vw;
         justify-content: center;
     }
-    /*#login-btn:before {
-        width: 50vw;
-        margin-left: 40px;
-    }*/
 }
 
 @media screen and (max-width:425px) {
@@ -230,10 +188,6 @@ input[type=submit]{
         width: 50vw;
         justify-content: center;
     }
-    /*#login-btn:before {
-        width: 50vw;
-        margin-left: 40px;
-    }*/
     #line-break1{
         width: 4rem;
     }   
@@ -247,10 +201,6 @@ input[type=submit]{
         width: 50vw;
         justify-content: center;
     }
-    /*#login-btn:before {
-        width: 50vw;
-        margin-left: 40px;
-    }*/
 
     #line-break1{
         width: 2rem;

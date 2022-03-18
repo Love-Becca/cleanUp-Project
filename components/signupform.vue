@@ -22,13 +22,13 @@
             <div id="info3">
                 <form>
                     <label for="password">Password</label><br>
-                    <input type="text" name="password" placeholder="Password"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
+                    <input type="password" name="password" placeholder="Password"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
                 </form>
             </div>
             <div id="info4">
                 <form>
                     <label for="cfpassword">Confirm Password</label><br>
-                    <input type="text" name="cfpassword" placeholder="Confirm Password"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
+                    <input type="password" name="cfpassword" placeholder="Confirm Password"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'29px', left:'15.5rem'}"/>
                 </form>
             </div>
             <div id="info5">
@@ -37,13 +37,13 @@
                     <input type="text" name="phonenumber" placeholder="+234"><font-awesome-icon icon="inbox" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
                 </form>
             </div>
-            <button><img src="../assets/googleicon.jpg" alt="google icon">Login With Google</button>
+            <button><img src="../assets/googleicon.jpg" alt="google icon"><a href="#">Login With Google</a></button>
             <div id="easy-login">
-                <p>Already have an account?<span id="login">Login</span></p>
+                <p>Already have an account?<span id="login"><nuxt-link to="/login">login</nuxt-link></span></p>
             </div>
             <div id="submit-btn">
                 <form>
-                    <input type="submit" value="Sign Up">
+                    <nuxt-link to="/login"><input type="submit" value="Sign Up"></nuxt-link>
                 </form>
             </div>
         </div>
@@ -91,7 +91,7 @@ span{
     text-align: center;
 }
 
-input[type=text]{
+input[type=text],[type=password]{
     width: 100%;
     height: 2rem;
     border: none;
@@ -137,6 +137,7 @@ button{
     height: 2rem;
     width: 95%;
     border-radius:5px;
+    border: none;
 }
 
 img{
@@ -145,63 +146,24 @@ img{
     right: 10px;
     border-radius: 50%;
 }
-/*#submit-btn:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(28vw);
-    margin-left: 340px;
-    margin-top: 7.5vh;
-    height: calc(90vh);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
 
-#submit-btn:active {
+a{
+    text-decoration: none;
     color: rgba(101, 192, 9, 1);
 }
 
-#submit-btn:active:after {
-    background: transparent;
+form{
+    height: 5.2rem;
 }
-
-#submit-btn:hover:before {
-    opacity: 1;
-}
-
-#submit-btn:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 90vh;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}*/
 
 @media screen and (max-width:768px) {
     #user-info{
         width: 40vw;
         justify-content: center;
     }
-    /*#submit-btn:before {
-        width: 40vw;
-        margin-left: 115px;
-    }*/
+    form{
+        height: 4rem;
+    }
 
 }
 
@@ -210,21 +172,14 @@ img{
         width: 50vw;
         justify-content: center;
     }
-    /*#submit-btn:before {
-        width: 50vw;
-        margin-left: 40px;
-    }*/
 }
 
 @media screen and (max-width:425px) {
      #user-info{
         width: 50vw;
         justify-content: center;
+        padding: 10px 20px ;
     }
-    /*#submit-btn:before {
-        width: 50vw;
-        margin-left: 40px;
-    }*/
 }
 
 @media screen and (max-width:375px) {
@@ -232,9 +187,15 @@ img{
         width: 50vw;
         justify-content: center;
     }
-    #submit-btn:before {
-        width: 50vw;
-        margin-left: 40px;
+    p{
+        font-size: 0.5rem;
+    }
+
+    button{
+        font-size: 0.6rem;
+    }
+    #user-info{
+        padding: 10px;
     }
 }
 </style>

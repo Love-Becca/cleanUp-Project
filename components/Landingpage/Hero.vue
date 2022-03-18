@@ -9,7 +9,7 @@
                 <a href="##">Home</a>
                 <a href="##">About</a>
                 <a href="##">Contact</a>
-                <button class="signin"><a href="##">Sign in</a></button>
+                <button class="signin"><nuxt-link to="/login">Sign in</nuxt-link></button>
             </nav>
         </div>
     </div>
@@ -26,7 +26,7 @@
                 fames
             </div>
             <div class="btn">
-                <button><a href="#"> Create an Account Free</a></button>
+                <button> <nuxt-link to="/signup">Create an Account Free</nuxt-link></button>
             </div>
         </div>
         <div class="right">
