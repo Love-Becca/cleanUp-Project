@@ -10,31 +10,31 @@
             <div id="info1">
                 <form>
                  <label for="username">Username</label><br>
-                <input type="text" name="username" placeholder="Username"><font-awesome-icon icon="user" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
+                <input type="text" name="username" placeholder="Username" minlength="6" maxlength="10"><font-awesome-icon icon="user" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
                 </form>
             </div>
             <div id="info2">
                 <form>
                     <label for="email">Email Address </label><br>
-                    <input type="text" name="email" placeholder="Email Address"><font-awesome-icon icon="envelope" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
+                    <input type="text" name="email" placeholder="Email Address" minlength="6" maxlength="50"><font-awesome-icon icon="envelope" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
                 </form>
             </div>
             <div id="info3">
                 <form>
                     <label for="password">Password</label><br>
-                    <input type="password" name="password" placeholder="Password"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
+                    <input type="password" name="password" placeholder="Password" minlength="6" maxlength="15"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
                 </form>
             </div>
             <div id="info4">
                 <form>
                     <label for="cfpassword">Confirm Password</label><br>
-                    <input type="password" name="cfpassword" placeholder="Confirm Password"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'29px', left:'15.5rem'}"/>
+                    <input type="password" name="cfpassword" placeholder="Confirm Password" minlength="6" maxlength="15"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'29px', left:'15.5rem'}"/>
                 </form>
             </div>
             <div id="info5">
                 <form>
                     <label for="phonenumber">Phone Number</label><br>
-                    <input type="text" name="phonenumber" placeholder="+234"><font-awesome-icon icon="inbox" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
+                    <input type="text" name="phonenumber" placeholder="+234" minlength="10" maxlength="20"><font-awesome-icon icon="inbox" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
                 </form>
             </div>
             <button><img src="../assets/googleicon.jpg" alt="google icon"><a href="#">Login With Google</a></button>
@@ -78,7 +78,6 @@ span{
 #user-info{
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto auto;
-    /*justify-self:center;*/
     width: 28vw;
     height: 90vh;
     border: none;

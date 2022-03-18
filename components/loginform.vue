@@ -16,13 +16,13 @@
             <div id="email-in">
                 <form>
                     <label for="email">Email Address </label><br>
-                    <input type="text" name="email" placeholder="Email Address"><font-awesome-icon icon="envelope" :style="{color:'grey',position: 'relative', bottom:'45px', left:'16rem'}"/>
+                    <input type="text" name="email" placeholder="Email Address" minlength="6" maxlength="50"><font-awesome-icon icon="envelope" :style="{color:'grey',position: 'relative', bottom:'45px', left:'16rem'}"/>
                 </form>
             </div>
             <div id="password-in">
                 <form>
                     <label for="password">Password</label><br>
-                    <input type="password" name="password" placeholder="Password"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'45px', left:'16rem'}"/>
+                    <input type="password" name="password" placeholder="Password" minlength="6" maxlength="15"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'45px', left:'16rem'}"/>
                 </form>
             </div>
             <div id="forget-pass">
@@ -30,7 +30,7 @@
             </div>
             <div id="login-btn">
                 <form>
-                    <a href="#"><input type="submit" value="Login"></a>
+                    <nuxt-link to="/dashboard"><input type="submit" value="Login"></nuxt-link>
                 </form>
             </div>
         </div>

@@ -35,12 +35,18 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/fontawesome',
+    '@nuxtjs/svg',
   ],
 
   fontawesome: {
     icons: {
       solid: true,
       brands: true,
+    }
+  },
+
+  svg: {
+    fileLoader: {
     }
   },
 
