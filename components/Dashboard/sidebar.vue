@@ -38,7 +38,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Poppins;
+    font-family: Poppins,'Encode Sans','Open Sans';
 }
 
 #bar{
@@ -75,7 +75,7 @@
 }
 
 #cross{
-    height: 48px;
-    width: 48px
+    height: 40px;
+    width: 40px
 }
 </style>
