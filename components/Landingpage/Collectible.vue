@@ -1,21 +1,20 @@
 <template>
-    <div class="process">
+     <div class="collectible">
          <div class="top">
-            The Process
+            Collectibles
         </div>
  
 
-</div>
+</div> 
 </template>
-
 <style scoped>
-.process{
+.collectible{
     position: absolute;
 width: 1440px;
 height: 348px;
 left: 0px;
-top: 2500px;
-background: #ffffff;
+top: 2800px;
+background: rgba(236, 252, 229, 0.6);
 
 }
 .top{

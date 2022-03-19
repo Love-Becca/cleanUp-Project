@@ -1,20 +1,19 @@
 <template>
-    <div class="process">
+     <div class="partner">
          <div class="top">
-            The Process
+            Partners
         </div>
  
 
-</div>
+</div> 
 </template>
-
 <style scoped>
-.process{
+.partner{
     position: absolute;
 width: 1440px;
 height: 348px;
 left: 0px;
-top: 2500px;
+top: 3100px;
 background: #ffffff;
 
 }

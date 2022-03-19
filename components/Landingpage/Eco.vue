@@ -8,7 +8,7 @@ Bricks for construction,
 Rugs and mats,
 Bags and sacks.
 </h4>
-    <img src="https://o.remove.bg/downloads/448acc9b-86c6-420e-ac1f-932639bf8dff/download__3_-removebg-preview.png" alt="">
+<img src="" alt="">
 
 </div>
 
@@ -43,7 +43,7 @@ line-height: 26px;
 width: 1440px;
 height: 348px;
 left: 0px;
-top: 2335px;
+top: 2127px;
 background: rgba(128, 255, 0, 0.09);
 }
 img{
