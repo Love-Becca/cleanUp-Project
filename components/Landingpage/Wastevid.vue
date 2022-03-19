@@ -18,6 +18,14 @@
     </div>
 </template>
 <style scoped>
+.vid {
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.vid img{
+     max-width: 100%;
+}
 .maincontent{
     display: flex;
     flex-direction: column;

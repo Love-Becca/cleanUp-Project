@@ -16,7 +16,15 @@
     <div class="div-container">
         <div class="left">
             <div class="gval">
-                Get Value For Plastic Waste
+                <div class="static-txt">
+                    Get Value For Plastic Waste
+                </div>
+                <div class="dynamic-text">
+                    <li><span style="color: rgb(50, 248, 43) ;">Today</span></li>
+                    <li><span style="color: rgb(200, 252, 13);">Tomorrow</span></li>
+                    <li><span style="color:  rgb(11, 61, 201);">Everyday</span></li>
+                </div>
+                
             </div>
             <div class="cont1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
@@ -30,7 +38,7 @@
             </div>
         </div>
         <div class="right">
-            <!-- insert the picture here and align to center -->
+            <img src="~/assets/trashcan.png" alt="trash cans">
         </div>
             
     </div>
@@ -41,12 +49,12 @@
     box-sizing: border-box;
 }
 .main{
-    background-color: rgb(66, 255, 0);
+    background-color: rgb(9, 170, 3);
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: linear-gradient(113.4deg, rgba(66, 255, 0, 0.81) -26.46%, #0066FF 113.47%);
-    padding: 2em 5em;
+    background-image: linear-gradient(95deg, rgb(9, 170, 3) 55%, #0066FF 130%);
+    padding: 2rem 5rem;
 }
 .top{
     display: flex;
@@ -64,22 +72,29 @@
     flex-direction: column;
     width: 50%;
 }
+.right{
+    justify-content: center;
+    align-items: center;
+    object-fit:contain;
+    max-width: 50%;
+    max-height: 50%;
+}
 .gval{
 font-family: -apple-system, BlinkMacSystemFont,
  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
  'Open Sans', 'Helvetica Neue', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 70px;
-line-height: 74px;
+font-size: 4.3rem;
+line-height: 4.6rem;
 color: white;
-margin: 100px 0;
+margin: 5% 0;
 }
 .cont1{
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 1rem;
 line-height: 24px;
 color: #FFFFFF;
 margin: 20px 0;
@@ -90,11 +105,11 @@ font-family: -apple-system, BlinkMacSystemFont,
  'Open Sans', 'Helvetica Neue', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 24px;
+font-size: 1.5rem;
 line-height: 28px;
 margin: 0;
 
-color: #FFFFFF;
+color: #ffffff;
 
 }
 .up{
@@ -103,7 +118,7 @@ font-family: -apple-system, BlinkMacSystemFont,
  'Open Sans', 'Helvetica Neue', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 24px;
+font-size: 1.5rem;
 line-height: 28px;
 margin: 0;
 
@@ -122,37 +137,45 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 }
-/* .btn button::before,.btn button::after{
-    content: "";
-    top: -2px;
-    left: -2px;
-    position: absolute;
-    background: linear-gradient(45deg 
-    rgba(66, 255, 0, 0.81), 
-    #0066FF,
-    red,
-    orange);
-    background-size: 400%;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    z-index: -1;
-    animation: glow 20s linear infinite;
+.dynamic-text{
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
 }
-.btn button::after{
-    filter: blur(30px);
+.dynamic-text li{
+    list-style: none;
+    font-family: 'Poppins';
+    font-size: 60px;
+    font-weight: 500;
+    animation: slide 4.5s steps(3) infinite;
+    position: relative;
+    top: 0;
 }
-@keyframes glow {
-    0%{
-        background-position: 0 0;
-    }
-    50%{
-        background-position: 400% 0;
-    }
+@keyframes slide {
     100%{
-        background-position: 0 0;
+        top: -270px;
+    }
+}
+.dynamic-text li span{
+    position: relative;
+}
+.dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid;
+    background:  rgb(9, 170, 3);
+    animation: typing 1.5s steps(8) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
     }
     
-} */
+}
 .btn button a{
 font-family: -apple-system, BlinkMacSystemFont,
  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
@@ -172,7 +195,7 @@ padding: 15px;
     justify-content: right;
 }
 nav a{
-    margin-right: 30px;
+    margin-right: 2em;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, 
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
@@ -191,10 +214,11 @@ nav a:active{
 nav a:hover{
     border-bottom: 2px solid #FFFFFF;
     padding-bottom: 2px;
+    font-weight: bold;
 }
 nav a:last-child:hover{
     border-bottom: none;
-    color: black;
+    font-weight: bolder;
 
 }
 .signin{
@@ -204,9 +228,10 @@ nav a:last-child:hover{
     padding: 10px 0px;
 }
 .signin a{
-      padding: 50px;
-      font-weight: bold;
+      padding: 3rem;
+      font-weight: 500;
 }
 
 
 </style>
+
