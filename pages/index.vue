@@ -6,6 +6,9 @@
 <LandingpageLeaderboard/>
 <LandingpageEco/>
 <LandingpageProcess/>
+<LandingpageCollectible/>
+<LandingpageFooter/>
+<LandingpagePartners/>
 </div>
 </template>
 <script>
