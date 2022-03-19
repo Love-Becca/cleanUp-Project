@@ -5,7 +5,7 @@
         </div>
         <div class="content">
             <div class="cartoon">
-               <!-- Put the cartoon here -->
+               <img src="~/assets/featuregifts.png" alt="gifts">
             </div>
             <div class="details">
                 <div class="reward">
@@ -32,7 +32,7 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2em 5em;
+    padding: 2em 5em 0em 5em;
 }
 .top{
     font-family: 'Poppins';
@@ -50,10 +50,14 @@
     flex-direction: row;
 }
 .cartoon{
-    width: 50%;
+    width: 40%;
+    align-content: flex-end;
+    align-items: flex-end;
+    padding: 5.5em;
+
 }
 .details{
-    width: 50%;
+    width: 60%;
     font-family: 'Poppins';
     font-style: normal;
     display: flex;

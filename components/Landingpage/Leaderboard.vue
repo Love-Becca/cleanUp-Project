@@ -17,7 +17,7 @@
                 </div>  
             </div>
              <div class="cartoon">
-               <!-- Put the cartoon here -->
+               <img src="~/assets/leaderboardhero.png" alt="Hero Leader">
             </div>
     </div>
 </template>
@@ -30,10 +30,11 @@
     padding: 2em 5em;
 }
 .cartoon{
-    width: 50%;
+    width: 40%;
+    padding: 3em 0em 2em 8em;
 }
 .details{
-    width: 50%;
+    width: 60%;
     font-family: 'Poppins';
     font-style: normal;
     display: flex;
