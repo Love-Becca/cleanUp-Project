@@ -5,7 +5,7 @@
                 <h2>C</h2>
             </div>
             <div id="add-bootle">
-                <img src="~/assets/frame39.png"  alt="add" id="cross">
+                <img src="~/assets/frame39.png"  alt="add" id="cross" {{darkmodecontribute}}>
             </div>
             <div id="perks">
                 <img src="~/assets/codesandbox.png" alt="perk">

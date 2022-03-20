@@ -39,7 +39,7 @@ line-height: 26px;
 
 }
 .eco-inovation{
-    position: absolute;
+position: absolute;
 width: 1440px;
 height: 348px;
 left: 0px;
