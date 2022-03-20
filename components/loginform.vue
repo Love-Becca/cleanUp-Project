@@ -16,13 +16,13 @@
             <div id="email-in">
                 <form>
                     <label for="email">Email Address </label><br>
-                    <input type="text" name="email" placeholder="Email Address" minlength="6" maxlength="50"><font-awesome-icon icon="envelope" :style="{color:'grey',position: 'relative', bottom:'45px', left:'16rem'}"/>
+                    <input type="text" name="email" placeholder="Email Address" minlength="6" maxlength="100"><font-awesome-icon icon="envelope" class="inbox"/>
                 </form>
             </div>
             <div id="password-in">
                 <form>
                     <label for="password">Password</label><br>
-                    <input type="password" name="password" placeholder="Password" minlength="6" maxlength="15"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'45px', left:'16rem'}"/>
+                    <input type="password" name="password" placeholder="Password" minlength="6" maxlength="100" class="eye">
                 </form>
             </div>
             <div id="forget-pass">
@@ -131,7 +131,7 @@ input[type=text],[type=password]{
     border: none;
     outline: none;
     border-radius: 0 7px 7px 7px ;
-    padding: 2px 10px;
+    padding: 2px 30px 2px 10px;
     margin-top: 5px;
     font-weight: 300;
     margin-bottom: 15px;
@@ -154,6 +154,10 @@ input[type=submit]{
     box-shadow: 1px 1px 1px rgb(167, 165, 165);
 }
 
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
 button{
     background-color: white;
     height: 2rem;
@@ -168,6 +172,16 @@ a{
     color: rgba(101, 192, 9, 1);
 }
 
+.inbox{
+    color:grey;
+    position: relative; 
+    bottom:45px; 
+    left: 16rem;
+}
+
+.eye{
+    padding: 2px 8px 2px 10px;
+}
 @media screen and (max-width:768px) {
     #user-login{
         width: 40vw;

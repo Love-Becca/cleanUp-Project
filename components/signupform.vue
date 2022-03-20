@@ -10,31 +10,31 @@
             <div id="info1">
                 <form>
                  <label for="username">Username</label><br>
-                <input type="text" name="username" placeholder="Username" minlength="6" maxlength="10"><font-awesome-icon icon="user" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
+                <input type="text" name="username" placeholder="Username" minlength="6" maxlength="50"><font-awesome-icon icon="user" class="move"  />
                 </form>
             </div>
             <div id="info2">
                 <form>
                     <label for="email">Email Address </label><br>
-                    <input type="text" name="email" placeholder="Email Address" minlength="6" maxlength="50"><font-awesome-icon icon="envelope" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
+                    <input type="text" name="email" placeholder="Email Address" minlength="6" maxlength="100"><font-awesome-icon icon="envelope" class="move" /> 
                 </form>
             </div>
             <div id="info3">
                 <form>
                     <label for="password">Password</label><br>
-                    <input type="password" name="password" placeholder="Password" minlength="6" maxlength="15"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
+                    <input type="password" name="password" placeholder="Password" minlength="6" maxlength="15" class="eye">
                 </form>
             </div>
             <div id="info4">
                 <form>
                     <label for="cfpassword">Confirm Password</label><br>
-                    <input type="password" name="cfpassword" placeholder="Confirm Password" minlength="6" maxlength="15"><font-awesome-icon icon="eye-slash" :style="{color:'grey',position: 'relative', bottom:'29px', left:'15.5rem'}"/>
+                    <input type="password" name="cfpassword" placeholder="Confirm Password" minlength="6" maxlength="15" class="eye">
                 </form>
             </div>
             <div id="info5">
                 <form>
                     <label for="phonenumber">Phone Number</label><br>
-                    <input type="text" name="phonenumber" placeholder="+234" minlength="10" maxlength="20"><font-awesome-icon icon="inbox" :style="{color:'grey',position: 'relative', bottom:'30px', left:'16rem'}"/>
+                    <input type="text" name="phonenumber" placeholder="+234" minlength="10" maxlength="20"><font-awesome-icon icon="inbox" class="move"  />
                 </form>
             </div>
             <button><img src="../assets/googleicon.jpg" alt="google icon"><a href="#">Login With Google</a></button>
@@ -96,7 +96,7 @@ input[type=text],[type=password]{
     border: none;
     outline: none;
     border-radius: 0 7px 7px 7px ;
-    padding: 2px 10px;
+    padding: 2px 30px 2px 10px;
     margin-top: 5px;
     box-shadow: 2px 1px 7px 1px rgb(219, 218, 218);
 }
@@ -122,6 +122,12 @@ input[type=submit]{
     border-radius: 5px;
     box-shadow: 1px 1px 1px rgb(167, 165, 165);
 }
+
+input[type=submit]:hover{
+    cursor: pointer;
+    
+}
+
 label{
     font-size: 0.8rem;
     font-weight: 500;
@@ -155,6 +161,17 @@ form{
     height: 5.2rem;
 }
 
+.move{
+    color: grey;
+    position: relative; 
+    bottom: 30px; 
+    left: 16rem;
+}
+
+.eye{
+    padding: 2px 8px 2px 10px;
+}
+
 @media screen and (max-width:768px) {
     #user-info{
         width: 40vw;
@@ -163,13 +180,18 @@ form{
     form{
         height: 4rem;
     }
-
+    .move{
+        left: 11.5rem;
+    }
 }
 
 @media screen and (max-width:600px) {
     #user-info{
         width: 50vw;
         justify-content: center;
+    }
+    .move{
+        left: 11rem;
     }
 }
 
@@ -178,6 +200,9 @@ form{
         width: 50vw;
         justify-content: center;
         padding: 10px 20px ;
+    }
+    .move{
+        left: 9.3rem;
     }
 }
 
@@ -196,5 +221,15 @@ form{
     #user-info{
         padding: 10px;
     }
+    .move{
+        left: 9rem;
+    }
 }
+
+@media screen and (max-width:320px) {
+    .move{
+        left: 7.5rem;
+    }
+}
+
 </style>

@@ -173,4 +173,33 @@ select{
     font-size: 17px;
     font-weight: 600;
 }
+@media screen and (max-width:600px) {
+    #section1{
+        width: 100vw;
+        padding: 10px;
+    }
+    #boards{
+    }
+    #details{
+        height: 100vh;
+    }
+    #fly{
+    border: none;
+    position:absolute;
+    top: 2rem;
+    right:  -5rem;
+    width: 250px;
+    height: 250px;
+    }
+    #greetings{
+    width: 10rem;
+    margin-right: 0rem ;
+    padding: 30px 0px;
+    text-align:left;
+    }
+
+    p, h2{
+        font-weight: 10px;
+    }
+}
 </style>

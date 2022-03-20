@@ -43,11 +43,7 @@ Bags and sacks
     opacity: 0.3;
 
 }
-.content{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
+
 .cartoon{
     width: 40%;
     align-content: flex-end;
