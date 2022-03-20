@@ -1,21 +1,32 @@
 <template>
-     <div class="collectible">
-         <div class="top">
+
+<div class="main">
+        <div class="top">
             Collectibles
-        </div>
- 
+</div>
+  <div class="content">
+            
+            <div class="glass">
+               <img src="~/assets/glass.png" alt="gifts">
+            </div>
 
-</div> 
+              <div class="glass">
+               <img src="~/assets/plastic.png" alt="gifts">
+            </div>
+           
+        
+            </div>
+</div>
 </template>
-<style scoped>
-.collectible{
-    position: absolute;
-width: 1440px;
-height: 348px;
-left: 0px;
-top: 2800px;
-background: rgba(236, 252, 229, 0.6);
 
+
+<style scoped>
+.main{
+    background-color:  rgba(128, 255, 0, 0.09);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 5em 0em 5em;
 }
 .top{
     font-family: 'Poppins';
@@ -27,4 +38,28 @@ background: rgba(236, 252, 229, 0.6);
     opacity: 0.3;
 
 }
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.glass{
+    width: 578px;
+    height: 277px;
+    top: 3034px;
+    left: 132px;
+}
+.plastic{
+    width: 566px;
+    height: 277px;
+    top: 3034px;
+    left: 726px;
+}
+
+
+
+
+
+
+
 </style>
