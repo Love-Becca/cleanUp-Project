@@ -7,8 +7,8 @@
 <LandingpageEco/>
 <LandingpageProcess/>
 <LandingpageCollectible/>
-<LandingpageFooter/>
 <LandingpagePartners/>
+<LandingpageFooter/>
 </div>
 </template>
 <script>
