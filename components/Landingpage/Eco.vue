@@ -55,25 +55,4 @@ Bags and sacks
     padding: 5.5em;
 
 }
-.details{
-    width: 60%;
-    font-family: 'Poppins';
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-}
-.reward{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 26px;
-    color: #000000;
-    padding-bottom: 1em;
-}
-.maindetail{
-    opacity: 0.6;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #000000;
-}
 </style>
