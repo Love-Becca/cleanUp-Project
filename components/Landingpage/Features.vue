@@ -12,14 +12,11 @@
                     Reward
                 </div>
                 <div class="maindetail">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Consequat, volutpat platea bibendum ut netus volutpat.
-                  Magna dolor, diam, feugiat volutpat.
-                   Mauris natoque at nisl in venenatis ac parturient vestibulum commodo. 
-                   Donec amet mauris, id ac tincidunt ullamcorper tincidunt vulputate. 
-                   Lectus nullam bibendum pharetra quam. 
-                   Ultricies in viverra fermentum tellus purus lobortis venenatis gravida risus. 
-                   Iaculis porta neque euismod odio..
+                     Check out  how to get rewarded for your plastic waste
+                      on your Dashboard through accumulation of points 
+                      in order to claim perks and swags.
+                    <b>GET REWARDED WHILE YOU CleanUP THE PLANET!</b>
+
 
                 </div>
             </div>

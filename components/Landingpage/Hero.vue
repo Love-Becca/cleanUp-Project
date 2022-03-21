@@ -27,11 +27,11 @@
                 
             </div>
             <div class="cont1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-                tristique aliquam laoreet mollis. Arcu adipiscing congue hendrerit
-                sed sapien. Vestibulum suscipit enim donec nisl eu diam. Mauris
-                fermentum in orci gravida bibendum eget. Nunc pretium luctus
-                fames
+                From 2.3 million tons in 1950 to 448 million tons in 2015, plastic production has grown at an exponential rate.
+                Single-use plastics account for 40% of all plastics manufactured each year, and these items end up as waste, polluting land and aquatic bodies.
+                <b>CleanUP</b> is a platform that collects plastic waste by rewarding environmentally conscious individuals who dropdrop their plastic waste to one of our many collectors.
+                <b>CleanUP</b> provides an effective and efficient waste collection system
+
             </div>
             <div class="btn">
                 <button> <nuxt-link to="/signup">Create an Account Free</nuxt-link></button>
