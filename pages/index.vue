@@ -12,6 +12,13 @@
 </div>
 </template>
 
+<style scoped>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+}
+</style>
 <script>
 //import { testing } from '../components/testing.vue'
 //export default {

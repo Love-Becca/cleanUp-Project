@@ -29,8 +29,8 @@
             <div class="cont1">
                 From 2.3 million tons in 1950 to 448 million tons in 2015, plastic production has grown at an exponential rate.
                 Single-use plastics account for 40% of all plastics manufactured each year, and these items end up as waste, polluting land and aquatic bodies.
-                <b>CleanUP</b> is a platform that collects plastic waste by rewarding environmentally conscious individuals who dropdrop their plastic waste to one of our many collectors.
-                <b>CleanUP</b> provides an effective and efficient waste collection system
+                <p><b>Clean<span id="up">Up</span></b> is a platform that collects plastic waste by rewarding environmentally conscious individuals who dropdrop their plastic waste to one of our many collectors.</p>
+                <b>Clean<span id="up">Up</span></b> provides an effective and efficient waste collection system
 
             </div>
             <div class="btn">
@@ -98,6 +98,7 @@ font-size: 1rem;
 line-height: 24px;
 color: #FFFFFF;
 margin: 20px 0;
+text-align: justify;
 }
 .clean{
 font-family: -apple-system, BlinkMacSystemFont,
@@ -108,10 +109,17 @@ font-weight: 700;
 font-size: 1.5rem;
 line-height: 28px;
 margin: 0;
-
 color: #ffffff;
-
 }
+
+p{
+ margin: 0 ;
+}
+
+#up{
+    color:black;
+}
+
 .up{
 font-family: -apple-system, BlinkMacSystemFont,
  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
