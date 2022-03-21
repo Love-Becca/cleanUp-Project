@@ -1,9 +1,9 @@
 <template>
     <div class="dashboard-comp">
         <div class="bar1">
-            <DashboardDarkmodesidebar />
-            <DashboardDarkmodeoverveiw />
-            <DashboardDarkmodenotification />
+            <LazyDashboardDarkmodesidebar />
+            <LazyDashboardDarkmodeoverveiw />
+            <LazyDashboardDarkmodenotification />
         </div>
     </div>
 </template>

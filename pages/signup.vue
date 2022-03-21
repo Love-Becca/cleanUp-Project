@@ -1,10 +1,10 @@
 <template>
 <div class="section">
     <div class="sign">
-        <signupform />
+        <LazySignupform />
     </div>
     <div class="comp">
-        <bottlecomp />
+        <LazyBottlecomp />
         <a href="#"><img src="../assets/whatsapp.jpg" height="55px" width="55px" alt="whatsapp icon"></a>
     </div>
 </div>

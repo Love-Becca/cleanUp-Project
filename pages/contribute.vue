@@ -1,5 +1,5 @@
 <template>
     <div id="add">
-        <DashboardBottlesubmit />
+        <LazyDashboardBottlesubmit />
     </div>
 </template>

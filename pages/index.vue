@@ -1,14 +1,14 @@
 <template>
 <div>
-<LandingpageHero/>
-<LandingpageWastevid/>
-<LandingpageFeatures/>
-<LandingpageLeaderboard/>
-<LandingpageEco/>
-<LandingpageProcess/>
-<LandingpageCollectible/>
-<LandingpagePartners/>
-<LandingpageFooter/>
+<LazyLandingpageHero/>
+<LazyLandingpageWastevid/>
+<LazyLandingpageFeatures/>
+<LazyLandingpageLeaderboard/>
+<LazyLandingpageEco/>
+<LazyLandingpageProcess/>
+<LazyLandingpageCollectible/>
+<LazyLandingpagePartners/>
+<LazyLandingpageFooter/>
 </div>
 </template>
 

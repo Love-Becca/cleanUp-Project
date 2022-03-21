@@ -1,10 +1,10 @@
 <template>
 <div id="wrap">
     <div class="form">
-        <loginform />
+        <LazyLoginform />
     </div>
     <div class="image-position">
-        <bottlecomp />
+        <LazyBottlecomp />
         <a href="#"><img src="../assets/whatsapp.jpg" height="55px" width="55px" alt="whatsapp icon"></a>
     </div>
 </div>
