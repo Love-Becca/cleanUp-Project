@@ -1,40 +1,38 @@
 <template>
-
-<div class="main">
-        <div class="top">
-            Collectibles
-</div>
-  <div class="content">
-            
+    <div class="main">
+        <h1>Collectibles</h1>  
+        <div class="content">
             <div class="glass">
-               <img src="~/assets/glass.png" alt="gifts">
+                <img src="~/assets/glass.png" alt="gifts">
             </div>
-
-              <div class="glass">
-               <img src="~/assets/plastic.png" alt="gifts">
+            <div class="glass">
+                <img src="~/assets/plastic.png" alt="gifts">
             </div>
-           
-        
-            </div>
-</div>
+        </div>
+    </div>
 </template>
 
 
 <style scoped>
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, 'Encocde Sans', 'Open Sans';
+    box-sizing: border-box;
+}
+
 .main{
     background-color:  rgba(128, 255, 0, 0.09);
-    max-width: 100%;
+    width: 100%;
+    height: 55vh;
     display: flex;
     flex-direction: column;
-    padding: 2em 5em 0em 5em;
+    padding: 2em 5em;
 }
-.top{
-    font-family: 'Poppins';
-    font-style: normal;
+h1{
     font-weight: 700;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 72px;
-    color: #000000;
     opacity: 0.3;
 
 }
@@ -42,24 +40,12 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
 }
-.glass{
+
+img{
     width: 578px;
-    height: 277px;
-    top: 3034px;
-    left: 132px;
+    height: 230px;
 }
-.plastic{
-    width: 566px;
-    height: 277px;
-    top: 3034px;
-    left: 726px;
-}
-
-
-
-
-
-
-
 </style>

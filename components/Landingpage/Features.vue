@@ -76,5 +76,6 @@
     font-size: 16px;
     line-height: 26px;
     color: #000000;
+    text-align: justify;
 }
 </style>

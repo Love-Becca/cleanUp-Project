@@ -23,7 +23,7 @@
 </template>
 <style scoped>
 .main{
-    background-color:  rgba(128, 255, 0, 0.22);
+    background-color: rgba(299, 299, 299, 1);
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -53,5 +53,6 @@
     font-size: 16px;
     line-height: 26px;
     color: #000000;
+    text-align: justify;
 }
 </style>

@@ -1,8 +1,6 @@
 <template>
     <div class="main">
-        <div class="top">
-            The Process
-        </div>
+        <h1>The Process</h1>
         <div class="content">
             <div class="cartoon1">
                <img src="~/assets/vector.png" alt="gifts"> <div class="collect">Collect Recyclables</div>
@@ -16,132 +14,40 @@
                <div class="cartoon4">
                <img src="~/assets/vector (1).png" alt="gifts"><div class="recycle">Recycle</div>
             </div>
-        
-            </div>
         </div>
-
-    
+    </div>
 </template>
 
 
 <style scoped>
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, 'Encocde Sans', 'Open Sans';
+}
+
 .main{
-    background-color:  #ffffff;
-    max-width: 100%;
+    background-color: rgba(299, 299, 299, 1);
+    width: 100%;
+    height: 35vh;
     display: flex;
     flex-direction: column;
-    padding: 2em 5em 0em 5em;
+    padding: 2rem 5rem;
 }
-.top{
-    font-family: 'Poppins';
-    font-style: normal;
+h1{
     font-weight: 700;
-    font-size: 48px;
-    line-height: 72px;
-    color: #000000;
+    font-size: 40px;
     opacity: 0.3;
-
+    margin-bottom: 20px;
 }
 .content{
     width: 100%;
+    height: 15vh;
     display: flex;
     flex-direction: row;
+    justify-content:space-evenly;
+    text-align: center;
+    font-weight: 600;
 }
-.cartoon1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    position: static;
-    width: 300px;
-    height: 100px;
-    left: 32.08%;
-    right: 32.08%;
-    top: 0px;
-
-}
-
-.cartoon2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    position: static;
-    width: 250px;
-    height: 93px;
-    left: 32.04%;
-    right: 32.04%;
-    top: 0px;
-    bottom: 48.39%;
-
-}
-.cartoon3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    position: static;
-    width: 250px;
-    height: 93px;
-    left: 32.04%;
-    right: 32.04%;
-    top: 0px;
-    bottom: 48.39%;
-
-}
-.cartoon4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    position: static;
-    width: 250px;
-    height: 93px;
-    left: 32.04%;
-    right: 32.04%;
-    top: 0px;
-    bottom: 48.39%;
-
-}
-.collect{
-    font-family: Roboto;
-    font-style: SemiBold;
-    font-size: 18px;
-    line-height: 21px;
-    align: left;
-    vertical-align: top;
-
-}
-.depo{
-    font-family: Roboto;
-    font-style: SemiBold;
-    font-size: 18px;
-    line-height: 21px;
-    align: left;
-    vertical-align: top;
-
-}
-.fran{
-    font-family: Roboto;
-    font-style: SemiBold;
-    font-size: 18px;
-    line-height: 21px;
-    align: left;
-    vertical-align: top;
-
-}
-.recycle{
-    font-family: Roboto;
-    font-style: SemiBold;
-    font-size: 18px;
-    line-height: 21px;
-    align: left;
-    vertical-align: top;
-
-}
-
 </style>

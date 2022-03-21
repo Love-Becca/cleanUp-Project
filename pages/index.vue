@@ -11,6 +11,7 @@
 <LandingpageFooter/>
 </div>
 </template>
+
 <script>
 //import { testing } from '../components/testing.vue'
 //export default {
