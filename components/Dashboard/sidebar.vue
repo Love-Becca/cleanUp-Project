@@ -11,10 +11,10 @@
                 <img src="~/assets/codesandbox.png" alt="perk">
             </div>
             <div id="badges">
-                <img src="~/assets/award.png"  alt="badge">
+                <nuxt-link to="/stages"><img src="~/assets/award.png"  alt="badge"></nuxt-link>
             </div>
             <div id="location">
-                <img src="~/assets/map-pin.png" alt="location">
+                <nuxt-link to="/locations"><img src="~/assets/map-pin.png" alt="location"></nuxt-link>
             </div>
             <div id="notifictaion">
                 <img src="~/assets/mail.png" alt="location">

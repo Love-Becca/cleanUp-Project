@@ -43,7 +43,21 @@
         </div>
         <div id="section3">
             <h2 id="progress">Progress Bar</h2>
-            <div id="graph"></div>
+            <div id="graph">
+                <div id="bar-one"></div>
+                <div id="bar-two"></div>
+                <div id="bar-three"></div>
+
+                <ul class="numbers">
+                    <li><div class="bar-height">10,000</div></li>
+                    <li><div class="bar-height">5,000</div></li>
+                    <li><div class="bar-height">1,000</div></li>
+                    <li><div class="bar-height">500</div></li>
+                    <li><div class="bar-height">200</div></li>
+                    <li><div class="bar-height">100</div></li>
+                    <li><div class="bar-height">0</div></li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -52,6 +66,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
     font-family: Poppins,'Encode Sans','Open Sans';
 }
 
@@ -71,7 +86,7 @@
     border: none;
     height: 10rem;
     background: rgba(0, 187, 59, 1);
-    margin: 25px 0px;
+    margin: 25px 0px 15px 0px;
     padding: 0 3rem;
     border-radius: 16px;
 }
@@ -94,7 +109,7 @@
     flex-direction: column;
     border: none;
     height: 10.5rem;
-    margin-bottom:20px;
+    margin-bottom: 10px;
 }
 
 #boards{
@@ -173,6 +188,91 @@ select{
     font-size: 17px;
     font-weight: 600;
 }
+
+#section3{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 15rem;
+}
+
+#graph{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    position: relative;
+    height: 13rem;
+    width: 50rem;
+    border-left: 2px solid  rgba(101, 192, 9, 1);;
+    border-bottom: 2px solid grey;
+    margin-top: 1rem;
+    z-index: 0;
+    
+}
+
+#numbers{
+    position: relative;
+    height: 13rem;
+    top: 0px;
+    left: -30px;
+    z-index: 100;
+}
+
+li{
+    position: relative;
+    border-bottom: none;
+    height: 26px;
+    left: -45px;
+    height: 29px;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+li::before{
+    content: '';
+    border: 2px solid red;
+    position: absolute;
+    bottom:  -1px;
+    left: 30px;
+    height: 40%;
+    border:solid grey 2px;
+    transform: skew(45deg);
+    width: 0px;
+}
+
+li div{
+    position: absolute;
+    width:30px;
+    left: -15px;
+    padding-top: 0px;
+    text-align: right;
+}
+
+#bar-one,#bar-two,#bar-three{
+    width: 20px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: green;
+    position: absolute;
+    left:3%;
+    bottom: 0px;
+    border: none;
+    z-index: 1000;
+}
+
+#bar-two{
+    left: 7%;
+    height:100px;
+    background-color: rgb(173, 173, 173);
+    
+}
+
+#bar-three{
+    left: 11%;
+    height:150px;
+    background-color: green;
+}
+
 @media screen and (max-width:600px) {
     #section1{
         width: 100vw;
