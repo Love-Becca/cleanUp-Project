@@ -56,13 +56,12 @@
     background-color:  #4c9800;
     opacity: 0.8;
     max-width: 100%;
-    height: 75vh;
     display: flex;
     flex-direction: column;
-    padding: 3rem 5rem;
+    padding: 3vw 5vw;
 }
 h2{
-    font-size: 18px;
+    font-size: 2.5vw;
     font-weight: 600;
     opacity: 0.8;
     align-self: center;
@@ -74,21 +73,21 @@ input{
     border-radius: 7px;
     border: none;
     outline:none;
-    padding: 10px 40px 10px 20px;
+    padding: 1vw 4vw 1vw 2vw;
 }
 
-.arrow{
+/* .arrow{
     width: 40%;
     color: grey;
     position: relative; 
-    bottom: 28px; 
-    left: 35rem;
-}
+    bottom: 2.3vw; 
+    left: 42vw;
+} */
 
 #details{
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding: 1vw;
 }
 
 #section{
@@ -104,40 +103,40 @@ input{
 #contactus{
     width: 30%;
     border-left: blue 1px solid;
-    padding: 10px 0px 10px 20px;
+    padding: 1vw 0vw 1vw 2vw;
 }
 
 #connect{
-    padding: 40px 0px;
+    padding: 2vw 0px;
 }
 
 h4{
-    font-size: 17px;
+    font-size: 1.5vw;
     font-weight: 600;
     opacity: 0.8;
     align-self: center;
-    margin-bottom: 20px;
+    margin-bottom: 1vw;
 }
 p{
     color: rgb(228, 228, 228);
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 1vw;
     text-align: justify;
 }
 
 #ogun{
-    margin-bottom: 30px;
+    margin-bottom: 2vw;
 }
 
 #services{
     border-left: red 1px solid;
     width: 50%;
-    padding: 10px 0px 10px 20px;
+    padding: 1vw 0 1vw 2vw;
 }
 
 #about{
     border-left:gold 1px solid;
     width: 50%;
-    padding: 10px 0px 10px 20px;
+    padding: 1vw 0vw 1vw 2vw;
 }
 </style>

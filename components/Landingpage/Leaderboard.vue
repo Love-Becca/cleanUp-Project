@@ -27,11 +27,15 @@
     max-width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 2em 5em;
+    padding: 2vw 5vw;
 }
 .cartoon{
     width: 40%;
-    padding: 3em 0em 2em 8em;
+    padding: 3vw 0 2vw 8vw;
+    object-fit: contain;
+}
+.cartoon img{
+    max-width: 100%;
 }
 .details{
     width: 60%;
@@ -42,16 +46,16 @@
 }
 .reward{
     font-weight: 700;
-    font-size: 36px;
-    line-height: 26px;
+    font-size: 3vw;
+    line-height: 2vw;
     color: #000000;
-    padding-bottom: 1em;
+    padding-bottom: 1vw;
 }
 .maindetail{
     opacity: 0.6;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1.5vw;
+    line-height: 1.8vw;
     color: #000000;
     text-align: justify;
 }

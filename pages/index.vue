@@ -13,10 +13,10 @@
 </template>
 
 <style scoped>
-*{
+*,::after,::before,html,body{
     padding: 0;
-    margin: 0;
-    box-sizing: none;
+    margin: 0 !important;
+    /* box-sizing: none; */
 }
 </style>
 <script>

@@ -30,24 +30,25 @@
 .main{
     background-color: rgba(299, 299, 299, 1);
     width: 100%;
-    height: 35vh;
     display: flex;
     flex-direction: column;
-    padding: 2rem 5rem;
+    padding: 2vw 5vw;
 }
 h1{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 3vw;
     opacity: 0.3;
-    margin-bottom: 20px;
+    margin-bottom: 1vw;
 }
 .content{
     width: 100%;
-    height: 15vh;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
     text-align: center;
     font-weight: 600;
+}
+.content div div{
+    font-size: 2vw;
 }
 </style>

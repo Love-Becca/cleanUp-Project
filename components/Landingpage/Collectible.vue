@@ -24,15 +24,14 @@
 .main{
     background-color:  rgba(128, 255, 0, 0.09);
     width: 100%;
-    height: 55vh;
     display: flex;
     flex-direction: column;
-    padding: 2em 5em;
+    padding: 2vw 5vw;
 }
 h1{
     font-weight: 700;
-    font-size: 40px;
-    line-height: 72px;
+    font-size: 3vw;
+    line-height: 4vw;
     opacity: 0.3;
 
 }
@@ -41,11 +40,16 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 1vw;
 }
-
+.content div{
+    display: flex;
+    object-fit: contain;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 img{
-    width: 578px;
-    height: 230px;
+   width: 100%;
 }
 </style>

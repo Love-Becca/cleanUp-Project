@@ -29,14 +29,14 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2em 5em 0em 5em;
+    padding: 2vw 5vw 0 5vw;
 }
 .top{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 72px;
+    font-size: 5vw;
+    line-height: 5vw;
     color: #000000;
     opacity: 0.3;
 
@@ -48,9 +48,10 @@
 }
 .cartoon{
     width: 40%;
-    align-content: flex-end;
-    align-items: flex-end;
-    padding: 5.5em;
+    align-content: center;
+    align-items: center;
+    object-fit: contain;
+    padding: 4vw;
 
 }
 .details{
@@ -60,19 +61,28 @@
     display: flex;
     flex-direction: column;
 }
+.cartoon img{
+    max-width: 100%;
+}
 .reward{
     font-weight: 700;
-    font-size: 36px;
-    line-height: 26px;
+    font-size: 3vw;
+    line-height: 1vw;
     color: #000000;
-    padding-bottom: 1em;
+    padding-bottom: 2vw;
 }
 .maindetail{
     opacity: 0.6;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1.3vw;
+    line-height: 1.8vw;
     color: #000000;
     text-align: justify;
+}
+@media screen and (max-width:800px) {
+    .maindetail{
+        font-size: 2vw;
+        line-height: 2vw;
+    }
 }
 </style>
