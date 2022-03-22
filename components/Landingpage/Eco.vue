@@ -20,7 +20,6 @@
 }
 #main{
     width: 100%;
-    height: 55vh;
     display: flex;
     flex-direction: row;
     background-color: rgba(128, 255, 0, 0.09);
@@ -29,25 +28,29 @@
 }
 
 #logo{
-    width: 50%;
-    border: none;
-    padding: 5.5em;
+    width: 40%;
+    padding: 5vw;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo img{
+    max-height: 100%;
 }
 
 #details{
-    width: 45%;
-    border: none;
+    width: 60%;
 }
 
 h1{
     font-weight: 700;
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 3vw;
+    margin-bottom: 2vw;
 }
-
 p{
-    font-size: 16px;
-    font-weight:400;
+    font-size: 1.5vw;
+    font-weight: 400;
     opacity: 0.6;
     text-align: justify;
 }

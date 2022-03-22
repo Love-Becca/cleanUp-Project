@@ -12,7 +12,7 @@
             <div class="icon">
                 <div><img src="~/assets/bottle.png" alt="bottle"></div>
                 <div>4,800,000</div>
-                <div>People Using Plastic</div>
+                <div>People Using </div>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
 .maincontent{
     display: flex;
     flex-direction: column;
-    padding: 5em;
+    padding: 4vw;
 }
 .stat{
     display: flex;
@@ -47,11 +47,11 @@
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, 
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-     'Open Sans', 'Helvetica Neue', sans-serif;
+    'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 2vw;
+    line-height: 2vw;
     color: rgba(0, 0, 0, 0.4);
 }
 </style>

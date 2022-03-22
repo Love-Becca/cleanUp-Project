@@ -31,17 +31,16 @@
 .main{
   background-color: rgba(299, 299, 299, 1);
   width: 100%;
-  height: 35vh;
   display: flex;
   flex-direction: column;
-  padding: 2em 5em 0em 5em;
+  padding: 2vw 5vw 0em 5vw;
 }
 
 h1{
   font-weight: 700;
-  font-size: 40px;
+  font-size: 3vw;
   opacity: 0.3;
-  margin-bottom: 2rem;
+  margin-bottom: 2vw;
 }
 
 .content{
@@ -50,6 +49,12 @@ h1{
   flex-direction: row;
   align-self: center;
   justify-content: space-evenly;
+}
+.content div{
+  object-fit: contain;
+}
+.content div img{
+  max-width: 100%;
 }
 </style>
 

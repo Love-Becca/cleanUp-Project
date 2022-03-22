@@ -38,14 +38,16 @@
             </div>
         </div>
         <div class="right">
-            <img src="~/assets/trashcan.png" alt="trash cans">
+            <img src="~/assets/trashcan.svg" alt="trash cans">
         </div>
             
     </div>
 </div>    
 </template>
 <style scoped>
-*{
+*,::after,::before{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 .main{
@@ -54,7 +56,7 @@
     flex-direction: column;
     width: 100%;
     background-image: linear-gradient(95deg, rgb(9, 170, 3) 55%, #0066FF 130%);
-    padding: 2rem 5rem;
+    padding: 2rem 1rem 2rem 5rem;
 }
 .top{
     display: flex;
@@ -62,7 +64,7 @@
     /* align-items: space-between; */
     width: 100%;
 }
-.div-container{
+.div-container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -75,29 +77,33 @@
 .right{
     justify-content: center;
     align-items: center;
-    object-fit:contain;
+    object-fit: contain;
     max-width: 50%;
     max-height: 50%;
 }
+.right img{
+    max-width: 100%;
+}
+
 .gval{
 font-family: -apple-system, BlinkMacSystemFont,
  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
  'Open Sans', 'Helvetica Neue', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 4.3rem;
-line-height: 4.6rem;
+font-size: 5vw;
+line-height: 5vw;
 color: white;
-margin: 5% 0;
+margin: 5vw 0;
 }
 .cont1{
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
-font-size: 1rem;
-line-height: 24px;
+font-size: 1.5vw;
+line-height: 1.5vw;
 color: #FFFFFF;
-margin: 20px 0;
+margin-bottom: 2vw;
 text-align: justify;
 }
 .clean{
@@ -106,8 +112,8 @@ font-family: -apple-system, BlinkMacSystemFont,
  'Open Sans', 'Helvetica Neue', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 1.5rem;
-line-height: 28px;
+font-size: 2vw;
+line-height: 2vh;
 margin: 0;
 color: #ffffff;
 }
@@ -126,8 +132,8 @@ font-family: -apple-system, BlinkMacSystemFont,
  'Open Sans', 'Helvetica Neue', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 1.5rem;
-line-height: 28px;
+font-size: 2vw;
+line-height: 2vh;
 margin: 0;
 
 color: rgba(0, 0, 0, 0.71);
@@ -135,6 +141,7 @@ color: rgba(0, 0, 0, 0.71);
 .logo{
     align-content: flex-start;
     width: 50%;
+
 }
 .btn button{
 background: #00BB3B;
@@ -144,6 +151,9 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+}
+button:hover{
+    cursor: pointer;
 }
 .dynamic-text{
     height: 90px;
@@ -194,22 +204,27 @@ font-size: 18px;
 line-height: 21px;
 color: #FFFFFF;
 text-decoration: none;
-padding: 15px;
+padding: 2vw;
 }
 .nav{
     display: flex;
     flex-direction: row;
     width: 50%;
-    justify-content: right;
+    justify-content: left;
+    
+}
+nav{
+    width: 100%;
 }
 nav a{
-    margin-right: 2em;
+    margin-right: 2vw;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, 
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
     color:white;
+    font-size: 1.5vw;
 
 }
 nav a:last-child{
@@ -233,13 +248,41 @@ nav a:last-child:hover{
     background: transparent;
     border: 2px solid white;
     border-radius: 10px;
-    padding: 10px 0px;
+    padding: 0.5rem 0rem;
 }
-.signin a{
-      padding: 3rem;
+.signin a {
+      padding: 3vw;
       font-weight: 500;
 }
-
-
+@media only screen and (max-width: 800px){
+    .div-container{
+        flex-direction: column;
+    } 
+    .right,.left{
+        width: 100%;
+    }
+    .right img{
+        display: none;
+    }
+    .main{
+        padding: 1.5vw 2vw 1.5vw 1vw;
+        background-image:linear-gradient(95deg, rgb(9, 170, 3) 100%, #0066FF 0%);
+    }
+    .cont1{
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+    .top{
+        font-size: 5vw;
+    }
+    nav a{
+        font-size: 2.1vw;
+    }
+    .logo span{
+        font-size: 3.5vw;
+    }
+    .btn button{
+        width: 100%;
+    }
+}
 </style>
-
