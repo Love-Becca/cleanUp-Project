@@ -26,13 +26,14 @@
                 </form>
             </div>
             <div id="forget-pass">
-                <a href="#"><p id="fg-pass">Forget Password?</p></a>
+                <p id="fg-pass">Forget Password?<a href="#"> Click here.</a></p>
             </div>
             <div id="login-btn">
                 <form @submit.prevent="loginUser">
                     <input type="submit" value="Login">
                 </form>
             </div>
+            <p id="sign">Dont have an account? <nuxt-link to="/signup">Sign Up</nuxt-link></p>
         </div>
     </div>
 </template>
@@ -71,7 +72,7 @@ span{
     width: 25vw;
     display: grid;
     margin-left: 50px;
-    padding: 70px 30px;
+    padding: 50px 30px;
     border-radius: 20px 0 0 20px;
     box-shadow: 1px 1px 3px 3px rgb(224, 222, 222, 0.5);
 }
@@ -92,6 +93,12 @@ img{
     top: 5px;
     right: 10px;
     border-radius: 50%;
+}
+
+#sign{
+    color: rgb(146, 146, 146);
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 #line-break{
@@ -141,7 +148,7 @@ input[type=text],[type=password]{
 #fg-pass{
     font-size:0.8rem;
     text-align: center;
-    color: rgba(101, 192, 9, 1);
+    color: rgb(146, 146, 146);
 }
 
 input[type=submit]{
@@ -182,6 +189,7 @@ a{
 .eye{
     padding: 2px 8px 2px 10px;
 }
+
 @media screen and (max-width:768px) {
     #user-login{
         width: 40vw;

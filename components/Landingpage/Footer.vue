@@ -61,7 +61,7 @@
     padding: 3vw 5vw;
 }
 h2{
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-weight: 600;
     opacity: 0.8;
     align-self: center;
@@ -76,13 +76,13 @@ input{
     padding: 1vw 4vw 1vw 2vw;
 }
 
-/* .arrow{
+.arrow{
     width: 40%;
     color: grey;
     position: relative; 
-    bottom: 2.3vw; 
-    left: 42vw;
-} */
+    bottom: 2.5vw; 
+    left: 40vw;
+} 
 
 #details{
     display: flex;
@@ -111,7 +111,7 @@ input{
 }
 
 h4{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-weight: 600;
     opacity: 0.8;
     align-self: center;

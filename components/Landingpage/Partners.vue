@@ -38,7 +38,7 @@
 
 h1{
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 2.5vw;
   opacity: 0.3;
   margin-bottom: 2vw;
 }

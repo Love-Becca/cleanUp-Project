@@ -46,15 +46,15 @@
 }
 .reward{
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2.5vw;
     line-height: 2vw;
     color: #000000;
-    padding-bottom: 1vw;
+    padding-bottom: 2.5vw;
 }
 .maindetail{
     opacity: 0.6;
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     line-height: 1.8vw;
     color: #000000;
     text-align: justify;

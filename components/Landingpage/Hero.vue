@@ -29,7 +29,7 @@
             <div class="cont1">
                 From 2.3 million tons in 1950 to 448 million tons in 2015, plastic production has grown at an exponential rate.
                 Single-use plastics account for 40% of all plastics manufactured each year, and these items end up as waste, polluting land and aquatic bodies.
-                <p><b>Clean<span id="up">Up</span></b> is a platform that collects plastic waste by rewarding environmentally conscious individuals who dropdrop their plastic waste to one of our many collectors.</p>
+                <p><b>Clean<span id="up">Up</span></b> is a platform that collects plastic waste by rewarding environmentally conscious individuals who drop their plastic waste in order to save mother earth for the coming generations.</p>
                 <b>Clean<span id="up">Up</span></b> provides an effective and efficient waste collection system
 
             </div>
@@ -100,7 +100,7 @@ margin: 5vw 0;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
-font-size: 1.5vw;
+font-size: 1.3vw;
 line-height: 1.5vw;
 color: #FFFFFF;
 margin-bottom: 2vw;

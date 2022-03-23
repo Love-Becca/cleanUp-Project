@@ -35,7 +35,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 5vw;
+    font-size: 3.5vw;
     line-height: 5vw;
     color: #000000;
     opacity: 0.3;
@@ -66,10 +66,10 @@
 }
 .reward{
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2.5vw;
     line-height: 1vw;
     color: #000000;
-    padding-bottom: 2vw;
+    padding-bottom: 3vw;
 }
 .maindetail{
     opacity: 0.6;

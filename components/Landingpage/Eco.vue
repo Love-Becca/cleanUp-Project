@@ -5,8 +5,8 @@
        </div>
        <div id="details">
            <h1> Eco Innovation</h1>
-           <p>Eco-Innovation is a CLEANUP initiative that is designed to increase the demand for plastic waste use. This initiative supports small and medium-scale local recycling operations in rural regions and is open to anybody who can come up with unique product ideas to produce from collected plastics around.
-                These product concepts should be of high quality and, ideally, have little or no market competition from new plastic items. Here are some of our CLEANUP product ideas:Planters for houseplants, Bricks for construction, Rugs and mats, Bags and sacks.
+           <p>Eco-Innovation is a CLEANUP initiative that is designed to increase the use of plastic waste. This initiative supports small and medium-scale local recycling operations in rural regions and is open to anybody who can come up with unique product ideas to produce from collected plastics around.
+                These product concepts should be of high quality and, ideally, have little or no market competition from new plastic items. Here are some of our CleanUp product ideas:Planters for houseplants, Bricks for construction, Rugs and mats, Bags and sacks.
             </p>
        </div>
    </div>
@@ -45,11 +45,11 @@
 
 h1{
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin-bottom: 2vw;
 }
 p{
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-weight: 400;
     opacity: 0.6;
     text-align: justify;

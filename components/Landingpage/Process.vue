@@ -36,7 +36,7 @@
 }
 h1{
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2.5vw;
     opacity: 0.3;
     margin-bottom: 1vw;
 }
@@ -49,6 +49,6 @@ h1{
     font-weight: 600;
 }
 .content div div{
-    font-size: 2vw;
+    font-size: 1vw;
 }
 </style>
