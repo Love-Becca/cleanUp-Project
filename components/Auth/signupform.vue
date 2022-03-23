@@ -8,42 +8,42 @@
                 <h2>Sign Up!</h2>
             </div>
             <div id="info1">
-                <form>
+                <form @submit.prevent="createUser">
                  <label for="username">Username</label><br>
-                <input type="text" name="username" placeholder="Username" minlength="6" maxlength="50"><font-awesome-icon icon="user" class="move"  />
+                <input type="name" name="username" placeholder="Username" v-model="form.name"  minlength="6" maxlength="50" ><font-awesome-icon icon="user" class="move"  />
                 </form>
             </div>
             <div id="info2">
-                <form>
+                <form @submit.prevent="createUser">
                     <label for="email">Email Address </label><br>
-                    <input type="text" name="email" placeholder="Email Address" minlength="6" maxlength="100"><font-awesome-icon icon="envelope" class="move" /> 
+                    <input type="email" name="email" placeholder="Email Address"  v-model="form.email" minlength="6" maxlength="100"><font-awesome-icon icon="envelope" class="move" /> 
                 </form>
             </div>
             <div id="info3">
-                <form>
+                <form @submit.prevent="createUser">
                     <label for="password">Password</label><br>
-                    <input type="password" name="password" placeholder="Password" minlength="6" maxlength="15" class="eye">
+                    <input type="password" name="password" placeholder="Password" v-model="form.password" minlength="6" maxlength="15" class="eye">
                 </form>
             </div>
             <div id="info4">
-                <form>
+                <form @submit.prevent="createUser">
                     <label for="cfpassword">Confirm Password</label><br>
-                    <input type="password" name="cfpassword" placeholder="Confirm Password" minlength="6" maxlength="15" class="eye">
+                    <input type="passwordconfirm" name="cfpassword" placeholder="Confirm Password" v-model="form.passwordconfirm" minlength="6" maxlength="15" class="eye">
                 </form>
             </div>
             <div id="info5">
                 <form>
                     <label for="phonenumber">Phone Number</label><br>
-                    <input type="text" name="phonenumber" placeholder="+234" minlength="10" maxlength="20"><font-awesome-icon icon="inbox" class="move"  />
+                    <input type="text" name="phonenumber" placeholder="+234" minlength="10" maxlength="20" v-model="form.text"><font-awesome-icon icon="inbox" class="move"  />
                 </form>
             </div>
-            <button><img src="../assets/googleicon.jpg" alt="google icon"><a href="#">Login With Google</a></button>
+            <button><img src="~/assets/googleicon.jpg" alt="google icon"><a href="#">Login With Google</a></button>
             <div id="easy-login">
                 <p>Already have an account?<span id="login"><nuxt-link to="/login">login</nuxt-link></span></p>
             </div>
             <div id="submit-btn">
-                <form>
-                    <nuxt-link to="/login"><input type="submit" value="Sign Up"></nuxt-link>
+                <form @submit.prevent="createUser">
+                    <input type="submit" value="Sign Up">
                 </form>
             </div>
         </div>
@@ -90,7 +90,7 @@ span{
     text-align: center;
 }
 
-input[type=text],[type=password]{
+input[type=text],[type=password], [type=name], [type=email], [type=passwordconfirm]{
     width: 100%;
     height: 2rem;
     border: none;
@@ -231,5 +231,36 @@ form{
         left: 7.5rem;
     }
 }
-
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      form: {
+        name: "",
+        email: "",
+        password: "",
+        passwordconfirm:"",
+      },
+    };
+  },
+  methods: {
+    async createUser() {
+      this.$toast.info('Creating your account...')
+      try {
+        await this.$fire.auth.createUserWithEmailAndPassword(
+          this.form.email,
+          this.form.password,
+          this.form.name,
+          this.passwordconfirm
+        );
+         this.$router.push("/login");
+         this.$toast.success("Account created successfully, kindly login")
+      } catch (error) {
+        this.$toast.error(error.message)
+      }
+    },
+  },
+};
+</script>

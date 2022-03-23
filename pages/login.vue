@@ -1,7 +1,7 @@
 <template>
 <div id="wrap">
     <div class="form">
-        <LazyLoginform />
+        <LazyAuthLoginform />
     </div>
     <div class="image-position">
         <LazyBottlecomp />
@@ -68,7 +68,10 @@ img{
         left: 100px;
     }
 }
-
-
-
 </style>
+
+<script>
+export default {
+    middleware: ["auth"],
+}
+</script>

@@ -1,7 +1,7 @@
 <template>
 <div class="section">
     <div class="sign">
-        <LazySignupform />
+        <LazyAuthSignupform />
     </div>
     <div class="comp">
         <LazyBottlecomp />
@@ -50,3 +50,9 @@ img{
     }
 }
 </style>
+
+<script>
+export default {
+    middleware: ["auth"],
+}
+</script>

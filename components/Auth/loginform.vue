@@ -7,30 +7,30 @@
             <div id="sign-in">
                 <h2>Login!</h2>
             </div>
-            <button><img src="../assets/googleicon.jpg" alt="google icon"><a href="#">Login With Google</a></button>
+            <button><img src="~/assets/googleicon.jpg" alt="google icon"><a href="#">Login With Google</a></button>
             <div id="line-break">
                 <div id="line-break1"></div>
                 <p id="line">or</p>
                 <div id="line-break2"></div>
             </div>
             <div id="email-in">
-                <form>
+                <form @submit.prevent="loginUser" >
                     <label for="email">Email Address </label><br>
-                    <input type="text" name="email" placeholder="Email Address" minlength="6" maxlength="100"><font-awesome-icon icon="envelope" class="inbox"/>
+                    <input type="text" name="email" placeholder="Email Address" v-model="form.email" minlength="6" maxlength="100"><font-awesome-icon icon="envelope" class="inbox"/>
                 </form>
             </div>
             <div id="password-in">
-                <form>
+                <form @submit.prevent="loginUser">
                     <label for="password">Password</label><br>
-                    <input type="password" name="password" placeholder="Password" minlength="6" maxlength="100" class="eye">
+                    <input type="password" name="password" placeholder="Password" v-model="form.password" minlength="6" maxlength="100" class="eye">
                 </form>
             </div>
             <div id="forget-pass">
                 <a href="#"><p id="fg-pass">Forget Password?</p></a>
             </div>
             <div id="login-btn">
-                <form>
-                    <nuxt-link to="/dashboard"><input type="submit" value="Login"></nuxt-link>
+                <form @submit.prevent="loginUser">
+                    <input type="submit" value="Login">
                 </form>
             </div>
         </div>
@@ -227,3 +227,33 @@ a{
     }
 }
 </style>
+
+<script>
+export default {
+    data(){
+        return {
+            form: {
+                email: "",
+                password: ""
+            }
+        }
+    },
+    methods: {
+    async loginUser() {
+        this.$toast.info('Logging in...')
+      try {
+       const response =  await this.$fire.auth.signInWithEmailAndPassword(
+          this.form.email,
+          this.form.password
+        );
+        this.$toast.success('Logged in!')
+        this.$router.push("/dashboard");
+        console.log(response)
+        this.$store.dispatch("onAuthStateChangedAction", {authUser: response.user})
+      } catch (error) {
+       this.$toast.error(error.message)
+      }
+    }
+    }
+}
+</script>

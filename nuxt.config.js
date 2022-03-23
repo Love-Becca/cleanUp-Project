@@ -52,7 +52,43 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
+    '@nuxtjs/toast',
+      [
+        '@nuxtjs/firebase',
+        {
+          config: {
+            apiKey: 'AIzaSyClWBwrsOSQ4xE-DAIk0FPSiyyPmeNH8UY',
+            authDomain: "cleanup-477f9.firebaseapp.com",
+            projectId: 'cleanup-477f9',
+            storageBucket: "cleanup-477f9.appspot.com",
+            messagingSenderId: "278691480250",
+            appId:"1:278691480250:web:56fd4e3aa45599de0a7883",
+            measurementId:"G-RP6WQM9KPX"
+          },
+          services: {
+            auth: true // Just as example. Can be any other service.
+          }
+        }
+      ]
+    ],
+
+toast: {
+  position: "top-left",
+  duration: 2000,
+  theme: "bubble",
+  singleton: true,
+  register: [
+    // Register custom toasts
   ],
+},
+
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  axios: {
+    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    baseURL: '/',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
