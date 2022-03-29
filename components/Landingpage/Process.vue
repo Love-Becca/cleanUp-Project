@@ -3,13 +3,13 @@
         <h1>The Process</h1>
         <div class="content">
             <div class="cartoon1">
-               <img src="~/assets/vector.png" alt="gifts"> <div class="collect">Collect Recyclables</div>
+               <img src="~/assets/hands.png" alt="gifts"> <div class="collect">Collect Recyclables</div>
             </div>
             <div class="cartoon2">
-               <img src="~/assets/vector.svg" alt="gifts"><div class="depo">Deposit Recyclables</div>
+               <img src="~/assets/franch.svg" alt="gifts"><div class="depo">Deposit Recyclables</div>
             </div>
             <div class="cartoon3">
-               <img src="~/assets/vector.svg" alt="gifts"> <div class="fran"> Franchise</div>
+               <img src="~/assets/franch.svg" alt="gifts"> <div class="fran"> Franchise</div>
             </div>
                <div class="cartoon4">
                <img src="~/assets/turn.png" alt="gifts"><div class="recycle">Recycle</div>
