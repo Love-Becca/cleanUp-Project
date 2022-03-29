@@ -17,7 +17,7 @@
             </form>
             <form>
                 <label for="comment">Comments</label><br>
-                <textarea name="comment" id="remark" rows="6" cols="30">Comments.............</textarea>
+                <textarea name="comment" id="remark" rows="6" cols="30">Comments............</textarea>
             </form>
         </div>
         <div id="location">
