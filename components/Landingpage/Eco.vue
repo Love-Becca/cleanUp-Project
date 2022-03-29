@@ -28,15 +28,12 @@
 }
 
 #logo{
-    width: 40%;
-    padding: 5vw;
+    width: 50%;
+    padding: 1vw 4vw;
     object-fit: contain;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#logo img{
-    max-height: 100%;
 }
 
 #details{
@@ -53,5 +50,11 @@ p{
     font-weight: 400;
     opacity: 0.6;
     text-align: justify;
+}
+@media screen and (max-width: 700px){
+    img{
+        width: 99px;
+        height: 67px;
+    }    
 }
 </style>

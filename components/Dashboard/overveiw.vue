@@ -2,7 +2,7 @@
     <div id="details">
         <div id="section1">
             <div id="greetings">
-                <p>Good Morning</p>
+                <p id="greet">Good Morning</p>
                 <h2>Arlene McCoy</h2>
                 <p id="bottle-level">24 Bottles to Next Level</p>
             </div>
@@ -32,7 +32,7 @@
                     <p id="sep">Points</p>
                 </div>
                 <div id="board3">
-                    <img src="~/assets/award.png"  alt="badge">
+                    <img src="~/assets/stage.svg"  alt="badge" width="70px" height="30px">
                     <p id="sep">Current Badges</p>
                 </div>
                 <div id="board4">
@@ -72,7 +72,7 @@
 
 #details{
     height: 97.6vh;
-    width: 60.375rem;
+    width: 90vw;
     border:none;
     display: flex;
     flex-direction: column;
@@ -87,7 +87,6 @@
     height: 10rem;
     background: rgba(0, 187, 59, 1);
     margin: 25px 0px 15px 0px;
-    padding: 0 3rem;
     border-radius: 16px;
 }
 
@@ -274,14 +273,13 @@ li div{
 }
 
 @media screen and (max-width:600px) {
-    #section1{
-        width: 100vw;
+    /*#section1{
         padding: 10px;
     }
     #boards{
     }
     #details{
-        height: 100vh;
+    
     }
     #fly{
     border: none;
@@ -300,6 +298,27 @@ li div{
 
     p, h2{
         font-weight: 10px;
-    }
+    }*/
 }
 </style>
+
+
+<script>
+//export default {
+//    myDate = new Date(),
+//    hours =  myDate.getHours(),
+//    greetings,
+//
+//    methods: {
+//        if (this.hours < 12) {
+//        greetings = 'Good Morning',
+//        }else if(hours >= 12 && hours <= 17){
+//        greetings = 'Good Afternoon',
+//        }else if(hours >= 17 && hours <= 24) {
+//        greetings = 'Good Evening',
+//        },
+//    },
+    
+//    document.getElementById('greet').innerHTML = greetings,
+//}
+</script>

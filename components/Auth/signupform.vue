@@ -253,7 +253,7 @@ export default {
           this.form.email,
           this.form.password,
           this.form.name,
-          this.passwordconfirm
+          this.passwordconfirm,
         );
          this.$router.push("/login");
          this.$toast.success("Account created successfully, kindly login")

@@ -1,6 +1,6 @@
 <template>
     <div class="image-bottle">
-        <img src="../assets/bottle.jpg" alt="bottle">
+        <img src="~/assets/bottle.jpg" alt="bottle">
     </div>
 </template>
 

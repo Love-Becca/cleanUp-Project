@@ -2,7 +2,7 @@
 
 export default ({ store, route, redirect, $toast, $cookies }) => {
   // Regex to check if route is a auth route
-  const isAuthRoute = new RegExp(["login", "signup"].join("|")).test(
+  const isAuthRoute = new RegExp(["signup", "login", "contribute"].join("|")).test(
     route.path
   );
 

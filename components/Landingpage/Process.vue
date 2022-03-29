@@ -51,4 +51,11 @@ h1{
 .content div div{
     font-size: 1vw;
 }
+
+@media screen and (max-width: 600px){
+    img{
+        height: 30px;
+        width: 30px;
+    }
+}
 </style>

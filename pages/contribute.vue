@@ -1,11 +1,11 @@
 <template>
     <div id="add">
-        <LazyDashboardBottlesubmit />
+        <LazyAuthBottlesubmit />
     </div>
 </template>
 
 <script>
 export default {
-    middleware: ["auth"],
+   middleware: ["auth"],
 }
 </script>

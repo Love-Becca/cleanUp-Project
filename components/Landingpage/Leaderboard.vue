@@ -27,7 +27,7 @@
     max-width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 2vw 5vw;
+    padding: 4vw 5vw;
 }
 .cartoon{
     width: 40%;

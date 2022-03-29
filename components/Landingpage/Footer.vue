@@ -24,10 +24,10 @@
                 <div id="connect">
                     <h4>Connect with us to get updated on recycling</h4>
                     <div id="social">
-                        <font-awesome-icon icon='envelope' />
-                        <font-awesome-icon icon='envelope' />
-                        <font-awesome-icon icon='envelope' />
-                        <font-awesome-icon icon='envelope' />
+                        <img src="~/assets/icons8-facebook.svg" alt="facebook">
+                        <img src="~/assets/instagram.svg" alt="instagram">
+                        <img src="~/assets/linkedin.svg" alt="linkedin">
+                        <img src="~/assets/twitter.svg" alt="twitter">
                     </div>
                 </div>
             </div>
@@ -80,8 +80,8 @@ input{
     width: 40%;
     color: grey;
     position: relative; 
-    bottom: 2.5vw; 
-    left: 40vw;
+    bottom: 2.3vw; 
+    left: 41vw;
 } 
 
 #details{
@@ -138,5 +138,20 @@ p{
     border-left:gold 1px solid;
     width: 50%;
     padding: 1vw 0vw 1vw 2vw;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (max-width: 700px) {
+    .arrow{
+        visibility: hidden;
+    }
+    img{
+        height: 25px;
+        width:25px;
+    }
 }
 </style>

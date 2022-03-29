@@ -16,7 +16,7 @@
             <div id="email-in">
                 <form @submit.prevent="loginUser" >
                     <label for="email">Email Address </label><br>
-                    <input type="text" name="email" placeholder="Email Address" v-model="form.email" minlength="6" maxlength="100"><font-awesome-icon icon="envelope" class="inbox"/>
+                    <input type="email" name="email" placeholder="Email Address" v-model="form.email" minlength="6" maxlength="100"><font-awesome-icon icon="envelope" class="inbox"/>
                 </form>
             </div>
             <div id="password-in">
@@ -132,7 +132,7 @@ img{
     border-bottom: rgb(138, 137, 137) 1.5px solid;
 }
 
-input[type=text],[type=password]{
+input[type=email],[type=password]{
     width: 100%;
     height: 2rem;
     border: none;
@@ -195,7 +195,9 @@ a{
         width: 40vw;
         justify-content: center;
     }
-    
+    .inbox{
+        left: 32vw;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -216,6 +218,9 @@ a{
     #line-break2{
         width:4rem;
     }
+    .inbox{
+        left: 39vw;
+    }
 }
 
 @media screen and (max-width:375px) {
@@ -233,6 +238,17 @@ a{
     button{
         font-size: 0.6rem;
     }
+    .inbox{
+        left: 27.5vw;
+    }
+
+}
+
+@media screen and (max-width:325px) {
+    .inbox{
+        left: 31vw;
+    }
+
 }
 </style>
 
@@ -242,7 +258,7 @@ export default {
         return {
             form: {
                 email: "",
-                password: ""
+                password: "",
             }
         }
     },

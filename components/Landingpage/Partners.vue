@@ -56,5 +56,12 @@ h1{
 .content div img{
   max-width: 100%;
 }
+
+@media screen and (max-width: 700px){
+   img{
+     height: 25px ;
+     width: 28px;
+   }
+}
 </style>
 

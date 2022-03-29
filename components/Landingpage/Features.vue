@@ -60,6 +60,7 @@
     font-style: normal;
     display: flex;
     flex-direction: column;
+    margin-top: 4vw;
 }
 .cartoon img{
     max-width: 100%;
@@ -83,6 +84,11 @@
     .maindetail{
         font-size: 2vw;
         line-height: 2vw;
+    }
+    img{
+        width: 70px;
+        height: 60px;
+
     }
 }
 </style>

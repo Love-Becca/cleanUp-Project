@@ -34,7 +34,7 @@
 
             </div>
             <div class="btn">
-                <button> <nuxt-link to="/signup">Create an Account Free</nuxt-link></button>
+                <button><nuxt-link to="/signup">Create an Account Free</nuxt-link></button>
             </div>
         </div>
         <div class="right">
@@ -99,7 +99,7 @@ margin: 5vw 0;
 .cont1{
 font-family: 'Poppins';
 font-style: normal;
-font-weight: 400;
+font-weight: 300;
 font-size: 1.3vw;
 line-height: 1.5vw;
 color: #FFFFFF;
@@ -269,7 +269,7 @@ nav a:last-child:hover{
         background-image:linear-gradient(95deg, rgb(9, 170, 3) 100%, #0066FF 0%);
     }
     .cont1{
-        font-size: 3vw;
+        font-size: 2.5vw;
         line-height: 3vw;
     }
     .top{

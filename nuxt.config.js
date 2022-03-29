@@ -53,7 +53,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/auth-next',
     '@nuxtjs/toast',
       [
         '@nuxtjs/firebase',
@@ -82,6 +81,13 @@ toast: {
   register: [
     // Register custom toasts
   ],
+},
+
+loading: {
+  name: 'chasing-dots',
+  color: '#ff5638',
+  background: 'white',
+  height: '4px'
 },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

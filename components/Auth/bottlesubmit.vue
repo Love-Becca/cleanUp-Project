@@ -3,19 +3,19 @@
         <div id="newbottle">
             <h1>Submit Bottle</h1>
             <h3>Details</h3>
-            <form @submit.prevent="bottleSubmit">
+            <form @submit="bottleDeposit">
                 <label for="num-bottle">Number of Bottles</label><br>
-                <input type="number" name="num-bottle" placeholder="Number of Bottles" minlength="0" id="spec" v-model="form.number">
+                <input type="number" name="num-bottle" placeholder="Number of Bottles" minlength="10" id="spec" v-model="form.number">
             </form>
-            <form @submit.prevent="bottleSubmit">
+            <form @submit="bottleDeposit">
                 <label for="bottle-size">Size of Bottles</label><br>
-                <input type="bottle" name="bottle-size" placeholder="Size of Bottles" id="spec" v-model="form.bottle">
+                <input type="size" name="bottle-size" placeholder="Size of Bottles" id="spec" v-model="form.size">
             </form>
-            <form @submit.prevent="bottleSubmit">
+            <form @submit="bottleDeposit">
                 <label for="collector-id">Collector Id</label><br>
                 <input type="collector" name="collector-id" placeholder="Collector-Id" id="spec" v-model="form.collector">
             </form>
-            <form @submit.prevent="bottleSubmit">
+            <form>
                 <label for="comment">Comments</label><br>
                 <textarea name="comment" id="remark" rows="6" cols="30">Comments.............</textarea>
             </form>
@@ -30,7 +30,9 @@
             <div id="map-img">
                 <img src="~/assets/googlemap.png" alt="location" height="250px" width="350">
             </div>
-            <button @submit.prevent="bottleSubmit"><nuxt-link to="/dashboard">Submit</nuxt-link></button>
+            <form @submit="bottleDeposit">
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </div>
 </template>
@@ -81,7 +83,7 @@
         margin-top: 10px;
     }
 
-    #spec, button{
+    #spec, input[type=submit]{
         width: 65%;
         height: 2rem;
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
@@ -93,8 +95,7 @@
         padding: 10px;
     }
 
-    button{
-        margin: 10px;
+    input[type=submit]{
         width: 40%;
         height: 2.5rem;
         font-weight: 600;
@@ -189,31 +190,32 @@
 </style>
 
 <script>
+
 export default {
-  data() {
-    return {
-      form: {
-        numbers: "",
-        bottle: "",
-        collector: "",
-      },
-    };
-  },
-  methods: {
-    async bottleSubmit() {
-      this.$toast.info('Submission request sent')
-      try {
-        await this.$fire.auth.bottleSubmitWithNumbersBottleAndCollector(
-          this.form.number,
-          this.form.bottle,
-          this.form.collector,
-        );
-         this.$router.push("/dashboard");
-         this.$toast.success("Bottle submitted successfully")
-      } catch (error) {
-        this.$toast.error(error.message)
-      }
+  data()  {
+      return {
+          form: {
+                size: "",
+                number: "",
+                collector: "",
+            }
+        }
     },
-  },
-};
+
+    methods: {
+        async bottleDeposit() {
+            try {
+                await this.bottleDeposit(
+                    this.form.size,
+                    this.form.number,
+                    this.form.collector
+                );
+                this.$router.push("/dashboard");
+                this.$toast.success("Bottle submitted successfully")
+            } catch (error) {
+            this.$toast.error(error.message)
+            }
+        }
+    }
+}
 </script>

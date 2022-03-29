@@ -2,13 +2,13 @@
     <div id="container">
         <div id="locate">
             <h2>Location</h2>
-         <img src="~/assets/googlemap.png" alt="location"  width="900px" height="530px">
+         <img src="~/assets/googlemap.png" alt="location"  width="980px" height="530px">
         </div>
     </div>
 </template>
 
 <style scoped>
-    *{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -17,10 +17,10 @@
 
 #container{
     height: 97.6vh;
-    width: 60.375rem;
+    width: 90vw;
     border:none;
     background-color: #E5E5E5;
-    padding: 20px 30px;
+    padding: 20px;
 }
 
 img{
