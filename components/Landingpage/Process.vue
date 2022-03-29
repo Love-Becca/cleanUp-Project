@@ -12,7 +12,7 @@
                <img src="~/assets/vector.svg" alt="gifts"> <div class="fran"> Franchise</div>
             </div>
                <div class="cartoon4">
-               <img src="~/assets/vector (1).png" alt="gifts"><div class="recycle">Recycle</div>
+               <img src="~/assets/turn.png" alt="gifts"><div class="recycle">Recycle</div>
             </div>
         </div>
     </div>
