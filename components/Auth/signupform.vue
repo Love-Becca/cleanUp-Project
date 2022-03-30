@@ -166,6 +166,8 @@ form{
     position: relative; 
     bottom: 30px; 
     left: 16rem;
+    width: 5px;
+
 }
 
 .eye{
