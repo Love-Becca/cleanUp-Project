@@ -187,6 +187,47 @@
         width: 0px;
         font-weight: bold;
     }
+
+    @media screen and (max-width:900px) {
+        #drop{
+        display: flex;
+        flex-direction: row;
+        height: 90vh;
+        width: 90vw;
+        padding: 10px;
+        }
+        img{
+            width:40vw;
+            height: 30vw;
+        }
+        #location{
+        border: none;
+        padding: 10px 10px 0 5px;
+        }
+        input[type=submit]{
+        width: 50%;
+        height: 2.5rem;
+        font-weight: 600;
+        margin-left: 20vw;
+        }
+        #spec{
+        width: 30vw;
+        font-size: 10px;
+        }
+        .search-box {
+        height: 50px;
+        width: 100%;
+        margin-bottom: 20px;
+        }
+        .search-box:hover > .search-txt{
+        width: 100%;
+        padding: 0 3px;
+        font-size: 10px;
+        }
+        textarea{
+        font-size: 10px;
+        }
+    }
 </style>
 
 <script>

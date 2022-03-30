@@ -5,15 +5,7 @@
                     Leaderboard
                 </div>
                 <div class="maindetail">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Consequat, volutpat platea bibendum ut netus volutpat.
-                  Magna dolor, diam, feugiat volutpat.
-                   Mauris natoque at nisl in venenatis ac parturient vestibulum commodo. 
-                   Donec amet mauris, id ac tincidunt ullamcorper tincidunt vulputate. 
-                   Lectus nullam bibendum pharetra quam. 
-                   Ultricies in viverra fermentum tellus purus lobortis venenatis gravida risus. 
-                   Iaculis porta neque euismod odio..
-
+                    View Top contributors of the week and find out where you stand on the Leaderboard. To qualify to be on the leader board   <nuxt-link to="/signup" :style="{'text-decoration':'none'}"><span>create an account</span></nuxt-link>
                 </div>  
             </div>
              <div class="cartoon">
@@ -43,6 +35,8 @@
     font-style: normal;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
+    margin-right: 15vw ;
 }
 .reward{
     font-weight: 700;
@@ -58,5 +52,10 @@
     line-height: 1.8vw;
     color: #000000;
     text-align: justify;
+}
+
+span{
+    color:rgba(101, 192, 9, 1);
+    text-decoration: none;
 }
 </style>

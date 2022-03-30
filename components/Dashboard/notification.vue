@@ -5,8 +5,8 @@
             <img src="~/assets/bell.svg"  alt="bell">
         </div>
         <div id="content">
-            <h3>Picker</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam quis varius hendrerit nunc hac nunc suspendisse tellus.</p>
+            <h3>Eco Saver</h3>
+            <p>You just finish stage 1 Eco saver, you got yourself a perk, check for what you won.</p>
         </div>
     </div>
 </template>
@@ -22,7 +22,6 @@
     display: flex;
     flex-direction: column;
     width: 23.25rem;
-    height: 97.6vh;
     padding: 40px 25px 20px 25px;
     border-radius: 0 16px 16px 0;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);

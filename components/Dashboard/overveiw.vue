@@ -71,7 +71,6 @@
 }
 
 #details{
-    height: 97.6vh;
     width: 90vw;
     border:none;
     display: flex;
@@ -192,7 +191,7 @@ select{
     display: flex;
     flex-direction: column;
     border: none;
-    height: 15rem;
+    height: 18rem
 }
 
 #graph{
@@ -272,33 +271,15 @@ li div{
     background-color: green;
 }
 
-@media screen and (max-width:600px) {
-    /*#section1{
-        padding: 10px;
-    }
+@media screen and (max-width:900px) {
     #boards{
-    }
-    #details{
-    
-    }
-    #fly{
-    border: none;
-    position:absolute;
-    top: 2rem;
-    right:  -5rem;
-    width: 250px;
-    height: 250px;
-    }
-    #greetings{
-    width: 10rem;
-    margin-right: 0rem ;
-    padding: 30px 0px;
-    text-align:left;
+        display: flex;
+        flex-direction: column;
     }
 
-    p, h2{
-        font-weight: 10px;
-    }*/
+    #bar-one,#bar-two,#bar-three{
+        margin: 0;
+    }
 }
 </style>
 

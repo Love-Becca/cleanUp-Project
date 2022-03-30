@@ -44,27 +44,27 @@
                 </div>
             </div>
             <div id="perks">
-                <img src="~/assets/codesandbox.png" alt="perk">
+                <img src="~/assets/codesandbox.png" alt="perk" class="pic">
             </div>
             <div id="badges">
-                <nuxt-link to="/stages"><img src="~/assets/award.png"  alt="badge"></nuxt-link>
+                <nuxt-link to="/stages"><img src="~/assets/award.png"  alt="badge" class="pic"></nuxt-link>
             </div>
             <div id="place">
-                <nuxt-link to="/locations"><img src="~/assets/map-pin.png" alt="location"></nuxt-link>
+                <nuxt-link to="/locations"><img src="~/assets/map-pin.png" alt="location" class="pic"></nuxt-link>
             </div>
             <div id="notifictaion">
-                <nuxt-link to="/message"></nuxt-link><img src="~/assets/mail.png" alt="location">
+                <nuxt-link to="/message"></nuxt-link><img src="~/assets/mail.png" alt="location" class="pic">
             </div>
         </div>
         <div id="section2">
             <div id="dark-mode">
-                <nuxt-link to="/dark"><img src="~/assets/moon.png" alt="dark"></nuxt-link>
+                <nuxt-link to="/dark"><img src="~/assets/moon.png" alt="dark" class="pic"></nuxt-link>
             </div>
             <div id="log-out">
-                <nuxt-link to="/login"><img src="~/assets/log-out.png" alt="logout"></nuxt-link>
+                <nuxt-link to="/login"><img src="~/assets/log-out.png" alt="logout" class="pic"></nuxt-link>
             </div>
             <div id="profile-pic">
-                <img src="~/assets/panda.jpg" alt="profile" id="panda" height="30px" width="30px">
+                <img src="~/assets/panda.jpg" alt="profile" id="panda" height="30px" width="30px" class="pic">
             </div>
         </div>
     </div>
@@ -79,7 +79,6 @@
 
 #bar{
     display: grid;
-    height: 97.6vh;
     width: 102px;
     border: none;
     border-radius: 10px 0 0 10px;
@@ -283,6 +282,54 @@ button{
     border: none;
     border-radius: 50%;
     cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+    #drop{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 90vw;
+    padding: 10px;
+    }
+    img{
+    width:40vw;
+    height: 30vw;
+    }
+    #location{
+    border: none;
+    padding: 10px 10px 0 5px;
+    }
+    input[type=submit]{
+    width: 50%;
+    height: 2.5rem;
+    font-weight: 600;
+    margin-left: 20vw;
+    }
+    #spec{
+    width: 30vw;
+    font-size: 10px;
+    }
+    .search-box {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    }
+    .search-box:hover > .search-txt{
+    width: 100%;
+    padding: 0 3px;
+    font-size: 10px;
+    }
+    .pic{
+        width: 7vw;
+        height: 5vh;
+    }
+    #bar{
+        padding: 3vw;
+    }
+    textarea{
+        font-size: 10px;
+    }
 }
 </style>
 

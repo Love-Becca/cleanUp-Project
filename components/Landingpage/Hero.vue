@@ -34,7 +34,7 @@
 
             </div>
             <div class="btn">
-                <button><nuxt-link to="/signup">Create an Account Free</nuxt-link></button>
+                <button><nuxt-link to="/signup">Create an Account Eco Saver</nuxt-link></button>
             </div>
         </div>
         <div class="right">
@@ -284,5 +284,6 @@ nav a:last-child:hover{
     .btn button{
         width: 100%;
     }
+
 }
 </style>

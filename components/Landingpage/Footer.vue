@@ -153,5 +153,8 @@ img{
         height: 25px;
         width:25px;
     }
+    input{
+        font-size: 1.5vw;
+    }
 }
 </style>
