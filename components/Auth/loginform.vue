@@ -184,6 +184,7 @@ a{
     position: relative; 
     bottom:45px; 
     left: 16rem;
+    width: 15px;
 }
 
 .eye{

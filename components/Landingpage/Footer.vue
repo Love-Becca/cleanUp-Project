@@ -77,11 +77,11 @@ input{
 }
 
 .arrow{
-    width: 40%;
+    width: 15px;
     color: grey;
     position: relative; 
     bottom: 2.3vw; 
-    left: 41vw;
+    left: 58vw;
 } 
 
 #details{
