@@ -330,6 +330,10 @@ button{
     textarea{
         font-size: 10px;
     }
+    #section1{
+        height: 90vh;
+        margin-bottom: 30vh;
+    }
 }
 </style>
 

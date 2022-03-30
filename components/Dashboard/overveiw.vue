@@ -277,9 +277,55 @@ li div{
         flex-direction: column;
     }
 
-    #bar-one,#bar-two,#bar-three{
+    #board1, #board2, #board3, #board4 {
         margin: 0;
+        width: 25vw;
+        height: 15vh;
+        align-self: center;
+        margin-bottom: 2vw;
     }
+    #details{
+        width: 50vw;
+        padding: 0 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    #greetings{
+        width: 100vw;
+        margin-right: 35rem;
+        padding: 10px;
+        text-align: center;
+    }
+    #fly{
+        width: 35vw;
+        height: 25vh;
+        position:relative;
+        bottom: 0px;
+        right: 36rem;
+    }
+    #section2{
+        height: 75vh;
+    }
+    #overveiw{
+        height: 9vh;
+    }
+    #graph{
+        width: 30vw;
+        align-self: flex-start;
+        margin-left: 15vw;
+    }
+    #bar-two{
+        left:10vw;
+    }
+    #bar-three{
+        left:18vw;
+    }
+
+
 }
 </style>
 
