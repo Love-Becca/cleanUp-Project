@@ -58,7 +58,7 @@
         </div>
         <div id="section2">
             <div id="dark-mode">
-                <nuxt-link to="/dark"><img src="~/assets/moon.png" alt="dark" class="pic"></nuxt-link>
+                <nuxt-link to="/"><img src="~/assets/home.png" alt="dark" class="pic" width="30px" height="30px" :style="{'color':'grey'}"></nuxt-link>
             </div>
             <div id="log-out">
                 <nuxt-link to="/login"><img src="~/assets/log-out.png" alt="logout" class="pic"></nuxt-link>
