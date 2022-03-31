@@ -18,4 +18,7 @@
 display: flex;
 flex-direction: row;
 }
+.dashboard-comp{
+    width: 100vw;
+}
 </style>

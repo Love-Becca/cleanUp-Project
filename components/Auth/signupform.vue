@@ -25,12 +25,12 @@
                     <input type="password" name="password" placeholder="Password" v-model="form.password" minlength="6" maxlength="15" class="eye">
                 </form>
             </div>
-            <div id="info4">
+            <!---<div id="info4">
                 <form @submit.prevent="createUser">
                     <label for="cfpassword">Confirm Password</label><br>
                     <input type="passwordconfirm" name="cfpassword" placeholder="Confirm Password" v-model="form.passwordconfirm" minlength="6" maxlength="15" class="eye">
                 </form>
-            </div>
+            </div>-->
             <div id="info5">
                 <form>
                     <label for="phonenumber">Phone Number</label><br>
@@ -192,8 +192,14 @@ form{
         width: 50vw;
         justify-content: center;
     }
+    input[type=submit]{
+        margin-top: 2.2vh;
+    }
+}
+
+@media screen and (max-width:600px) {
     .move{
-        left: 11rem;
+        left: 27.5vw;
     }
 }
 
@@ -243,7 +249,7 @@ export default {
         name: "",
         email: "",
         password: "",
-        passwordconfirm:"",
+        //passwordconfirm:"",
       },
     };
   },
@@ -255,7 +261,7 @@ export default {
           this.form.email,
           this.form.password,
           this.form.name,
-          this.passwordconfirm,
+          //this.passwordconfirm,
         );
          this.$router.push("/login");
          this.$toast.success("Account created successfully, kindly login")

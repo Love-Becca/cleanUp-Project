@@ -272,6 +272,11 @@ li div{
 }
 
 @media screen and (max-width:900px) {
+    img{
+        height: 20px;
+        width: 60px;
+    }
+
     #boards{
         display: flex;
         flex-direction: column;
@@ -284,8 +289,14 @@ li div{
         align-self: center;
         margin-bottom: 2vw;
     }
+
+    #board3{
+        padding: 10px;
+        text-align: center;
+    }
+
     #details{
-        width: 50vw;
+        width: 60vw;
         padding: 0 10px;
     }
     p{
@@ -295,23 +306,26 @@ li div{
         font-size: 12px;
     }
     #greetings{
-        width: 100vw;
-        margin-right: 35rem;
-        padding: 10px;
+        width: 30vw;
+        margin-right: 0;
+        padding: 30px 10px;
         text-align: center;
     }
     #fly{
-        width: 35vw;
-        height: 25vh;
+        width: 40vw;
+        height: 30vh;
         position:relative;
         bottom: 0px;
-        right: 36rem;
+        right: 5vw;
     }
     #section2{
         height: 75vh;
     }
     #overveiw{
         height: 9vh;
+    }
+    form{
+        align-self: center;
     }
     #graph{
         width: 30vw;
@@ -324,8 +338,7 @@ li div{
     #bar-three{
         left:18vw;
     }
-
-
+    
 }
 </style>
 

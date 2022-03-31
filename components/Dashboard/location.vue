@@ -16,7 +16,6 @@
 }
 
 #container{
-    height: 97.6vh;
     width: 90vw;
     border:none;
     background-color: #E5E5E5;
@@ -32,5 +31,17 @@ h2{
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 30px;
+}
+
+@media screen and (max-width:900px) {
+    #container{
+        width: 70vw;
+    }
+
+    img{
+        height: 60vh ;
+        width:60vw;
+    }
+
 }
 </style>

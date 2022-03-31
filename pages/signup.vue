@@ -31,7 +31,7 @@ img{
 }
 @media screen and (max-width:768px) {
     img{
-        left: 250px;
+        left: 35vw;
     }
     .section{
         margin-left: 0px;

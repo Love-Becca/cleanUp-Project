@@ -206,6 +206,12 @@ a{
         width: 50vw;
         justify-content: center;
     }
+    #line-break1{
+        width: 4rem;
+    }   
+    #line-break2{
+        width:4rem;
+    }
 }
 
 @media screen and (max-width:425px) {

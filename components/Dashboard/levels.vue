@@ -94,7 +94,6 @@
 }
 
 #details{
-    height: 97.6vh;
     width: 90vw;
     border:none;
     display: flex;
@@ -136,4 +135,20 @@ td{
     font-weight: 400;
     font-size: 2.5vh;
 }
+
+@media screen and (max-width:900px) {
+    #details{
+        width: 70vw;
+        padding: 10px;
+    }
+    td{
+        font-weight: 400;
+        font-size: 1.2vh;
+    }   
+    
+    th{
+        font-size: 1.5vh;
+    }
+}
+
 </style>

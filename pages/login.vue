@@ -46,7 +46,7 @@ img{
         width: 100vw;
     }
     img{
-        left:230px;
+        left:35vw;
         bottom:30px;
     }
     
