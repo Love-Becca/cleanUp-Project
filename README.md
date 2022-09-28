@@ -8,3 +8,5 @@ because I and my team were working against a deadline and they barely have a kno
 
 Although our solutions were not selected but I do like to futher on this project,
 So I'm open to contributions and suggestion🤗.
+
+Here is the link to the project 👉https://cleanup-sdg.netlify.app/
